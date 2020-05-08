@@ -1,68 +1,50 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Sterling Watts
 
-## Available Scripts
+**Full Stack Web Developer**
 
-In the project directory, you can run:
+I am a passionate Full Stack Web Developer that enjoys making beautiful and intuitive websites as well as analyzing the data that I can get from them!
 
-### `npm start`
+## About Me
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+I love to code! I have studied Data Analysis on DataQuest and am taking the Full Stack Web Developer bootcamp with Bloc. What I appreciate most about coding is being able to make something that people can use and will enhance their lives. I'm a problem solver and a technophile which I want to use to enrich people's lives. When I am not building the front of a website, I love to geek out on the data I can get from it and how I can use it to improve the user experience.
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+Coding isn't my only passion. My board game shelf is overflowing with games, my favorites being modern Euro style board games like Scythe. Additionally, I am a huge wine nerd. I even have a Certified Sommelier certificate to prove it! I appreciate sharing my knowledge about wine with people and engaging with them as to how the they perceive the wine in relation to aroma and taste. Feel free to contact me or follow me on social media and be sure to browse my projects!
 
-### `npm test`
+## Projects
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**[Quaff Quizz](https://sterlingdwatts.github.io/quaff_quizz)** | **[Repo](https://github.com/SterlingDWatts/quaff_quizz)**  
+Learn and Study Wine!
 
-### `npm run build`
+Learn wine through short digestible modules followed by tests. Get a high enough score and unlock the next module! As modules are unlocked the questions are added into the study section filtered by topic to make it easy to cement the
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+This site was made with HTML/CSS/JavaScript/React/Node.js/PostgreSQL/Heroku
+![Quaff Quizz Landing Page](https://sterlingdwatts.github.io/portfolio/images/quaff-quiz-desktop.png)
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+**[Sterling | Blog](https://sterling-blog-app.now.sh/)** | **[Client Repo](https://github.com/SterlingDWatts/sterling-blog)** | **[Server Repo](https://github.com/SterlingDWatts/sterling-blog-server)**  
+A blog content management system. Users can scroll through and read existing blogs. People logged in can create new blogs as well as edit they have created using an intuitive "what you see is what you get" editor.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This page was made with HTML/CSS/JavaScript/React/Node.js/PostgreSQL/Heroku/Froala-Editor  
+![Quaff Quizz Landing Page](https://sterlingdwatts.github.io/portfolio/images/sterling-blog-desktop.png)
 
-### `npm run eject`
+**[Game Hub](https://sterlingdwatts.github.io/game_hub)** | **[Repo](https://github.com/SterlingDWatts/game_hub)**  
+The hottest new way to discover new board games!
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Game Hub allows users to search for a specific board game or select from an always updating list of the hottest trending games! Game Hub has detailed information about each game and has links for families the game belongs to so you can find similar games. On each game's info page, there are also links to any expansions that exist for the game, so that if you love the game you can keep the fun going!
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+This page was made with HTML/CSS/JavaScript(jQuery)/XML/Board Game Geek API  
+![Game Hub Landing Page](https://sterlingdwatts.github.io/portfolio/images/game-hub-desktop-landing-page.png)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Technology
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+- HTML/CSS
+- JavaScript/jQuery
 
-## Learn More
+## Portfolio
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+[Live Portfolio](https://sterlingdwatts.github.io/portfolio/)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Connect
 
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+- Cell: 858.609.9463
+- GitHub: [/SterlingDWatts](https://github.com/SterlingDWatts)
+- Linkedin: [/SterlingDWatts](https://www.linkedin.com/in/sterlingdwatts/)
