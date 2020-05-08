@@ -2,25 +2,25 @@ import React from "react";
 import ReactDOM from "react-dom";
 import renderer from "react-test-renderer";
 import { BrowserRouter } from "react-router-dom";
-import App from "./App";
+import Projects from "./Projects";
 
-describe("App Component", () => {
+describe("Projects Component", () => {
   it("renders without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(
       <BrowserRouter>
-        <App />
+        <Projects />
       </BrowserRouter>,
       div
     );
     ReactDOM.unmountComponentAtNode(div);
   });
 
-  it("renders the UI as expected", () => {
+  it("render the UI as expected", () => {
     const tree = renderer
       .create(
         <BrowserRouter>
-          <App />
+          <Projects />
         </BrowserRouter>
       )
       .toJSON();

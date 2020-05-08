@@ -1,0 +1,21 @@
+.Section {
+  padding: 16px;
+}
+
+.Section h2 {
+  font-size: 32px;
+  margin: 24px 0 32px;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.Section p {
+  text-align: left;
+  max-width: 912px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Section p + p {
+  margin-top: 16px;
+}

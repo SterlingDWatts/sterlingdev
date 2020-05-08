@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Project Component renders the UI as expected 1`] = `
+<div
+  className="Project"
+>
+  <img />
+  <div
+    className="Project--info"
+  >
+    <h3 />
+    <div
+      className="Project--links"
+    >
+      <a>
+        Site
+      </a>
+       ∙
+       
+      <a>
+        Client Repo
+      </a>
+    </div>
+  </div>
+</div>
+`;

@@ -1,0 +1,73 @@
+.Connect {
+  height: calc(100vh - 56px);
+  min-height: 526px;
+  background-color: #439688;
+}
+
+.Connect.Section {
+  padding: 0;
+}
+
+.Connect h2,
+.Connect a {
+  color: #fcd734;
+}
+
+.Connect--picture-container {
+  height: 60%;
+}
+
+.Connect--picture {
+  height: 100%;
+  width: 100%;
+  background-image: url(https://sterlingdwatts.github.io/portfolio/images/sterling-colorado.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.Connect--info {
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Connect--info-grid {
+  padding: 0 16px;
+  display: grid;
+  grid-template-columns: 67px 200px;
+  column-gap: 16px;
+  row-gap: 16px;
+  text-align: left;
+  line-height: 1;
+}
+
+@media screen and (min-width: 500px) {
+  .Connect--picture {
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.15),
+      0 1px 4px 1px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .Connect {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .Connect--info,
+  .Connect--picture-container {
+    width: 50%;
+    height: 100%;
+  }
+
+  .Connect--picture {
+    width: 100%;
+    box-shadow: none;
+    background-image: url(https://sterlingdwatts.github.io/portfolio/images/sterling-colorado-big.jpg);
+    background-position: top;
+  }
+}

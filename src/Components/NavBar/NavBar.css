@@ -1,0 +1,37 @@
+.NavBar {
+  background-color: #003d32;
+  color: #fcd734;
+  line-height: 1;
+  font-size: 16px;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.NavBar__container {
+  padding: 16px;
+  width: 100%;
+  max-width: 944px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.NavBar a {
+  color: #fcd734;
+  text-decoration: none;
+}
+
+.NavBar--marquee {
+  font-size: 20px;
+}
+
+@media screen and (min-width: 350px) {
+  .NavBar--marquee {
+    font-size: 24px;
+  }
+}

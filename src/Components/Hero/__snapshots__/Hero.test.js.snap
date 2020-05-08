@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hero Component renders the UI as expected 1`] = `
+<section
+  className="Hero Section"
+  id="sterling"
+>
+  <div
+    className="Hero__container"
+  >
+    <div
+      className="Hero__header"
+    >
+      <header>
+        <h1>
+          Sterling 
+          <br
+            className="Hero--large"
+          />
+          Watts
+        </h1>
+        <span>
+          Full Stack Web Developer
+        </span>
+      </header>
+    </div>
+    <div
+      className="Hero__image_container"
+    >
+      <div
+        className="Hero__image"
+      />
+    </div>
+    <div
+      className="Hero--blurb"
+    >
+      <p>
+        I am a passionate Full Stack Web Developer that enjoys making beautiful and intuitive websites as well as analyzing the data that I can get from them!
+      </p>
+    </div>
+  </div>
+</section>
+`;

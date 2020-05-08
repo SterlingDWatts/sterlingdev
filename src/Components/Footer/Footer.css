@@ -1,0 +1,22 @@
+.Footer {
+  background-color: #003d32;
+  color: #fcd734;
+  line-height: 1;
+  font-size: 24px;
+  width: 100%;
+}
+
+.Footer a {
+  color: #fcd734;
+}
+
+.Footer__container {
+  padding: 16px;
+  width: 100%;
+  max-width: 944px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}

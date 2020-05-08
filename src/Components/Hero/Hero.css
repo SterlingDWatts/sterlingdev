@@ -1,0 +1,111 @@
+.Hero {
+  background-color: #00685b;
+  color: white;
+  height: 100vh;
+  min-height: 585px;
+  padding-top: 52px;
+  text-align: left;
+}
+
+.Hero.Section {
+  padding: 52px 0 0;
+}
+
+.Hero__container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.Hero__header {
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.Hero header {
+  width: fit-content;
+}
+
+.Hero h1 {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.Hero__image_container {
+  width: 100%;
+  height: 50%;
+}
+
+.Hero__image {
+  width: 100%;
+  height: 100%;
+  background-image: url(https://sterlingdwatts.github.io/portfolio/images/italy.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.Hero--blurb {
+  height: 20%;
+  min-height: 152px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.Hero--large {
+  display: none;
+}
+
+@media screen and (min-width: 350px) {
+  .Hero.Section {
+    padding: 56px 0 0;
+  }
+}
+
+@media screen and (min-width: 500px) {
+  .Hero__image {
+    width: 80%;
+    margin: 0 auto;
+    box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.15),
+      0 1px 4px 1px rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media screen and (min-width: 900px) {
+  .Hero__container {
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .Hero__header,
+  .Hero__image_container,
+  .Hero--blurb {
+    width: 50%;
+  }
+
+  .Hero__header {
+    height: 60%;
+    order: 1;
+  }
+
+  .Hero--blurb {
+    height: 40%;
+    order: 2;
+  }
+
+  .Hero__image_container {
+    height: 100%;
+    order: 3;
+  }
+
+  .Hero__image {
+    width: 100%;
+    background-image: url(https://sterlingdwatts.github.io/portfolio/images/italy-big.jpg);
+    box-shadow: none;
+  }
+}
