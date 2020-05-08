@@ -12,13 +12,13 @@ Coding isn't my only passion. My board game shelf is overflowing with games, my 
 
 ## Projects
 
-**[Quaff Quizz](https://sterlingdwatts.github.io/quaff_quizz)** | **[Repo](https://github.com/SterlingDWatts/quaff_quizz)**  
+**[Quaff Quizz](https://quaff.now.sh/)** | **[Repo](https://github.com/SterlingDWatts/quaff)** | **[Server Repo](https://github.com/SterlingDWatts/quaff-server)**  
 Learn and Study Wine!
 
 Learn wine through short digestible modules followed by tests. Get a high enough score and unlock the next module! As modules are unlocked the questions are added into the study section filtered by topic to make it easy to cement the
 
 This site was made with HTML/CSS/JavaScript/React/Node.js/PostgreSQL/Heroku
-![Quaff Quizz Landing Page](https://sterlingdwatts.github.io/portfolio/images/quaff-quiz-desktop.png)
+![Quaff Quizz Landing Page](https://quaff.now.sh/QuaffLanding.PNG)
 
 **[Sterling | Blog](https://sterling-blog-app.now.sh/)** | **[Client Repo](https://github.com/SterlingDWatts/sterling-blog)** | **[Server Repo](https://github.com/SterlingDWatts/sterling-blog-server)**  
 A blog content management system. Users can scroll through and read existing blogs. People logged in can create new blogs as well as edit they have created using an intuitive "what you see is what you get" editor.
