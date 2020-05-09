@@ -9,12 +9,31 @@ class Project extends Component {
         <div className="Project--info">
           <h3>{this.props.name}</h3>
           <div className="Project--links">
-            <a href={this.props.siteLink}>Site</a> ∙{" "}
-            <a href={this.props.clientLink}>Client Repo</a>
+            <a
+              href={this.props.siteLink}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Site
+            </a>{" "}
+            ∙{" "}
+            <a
+              href={this.props.clientLink}
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Client Repo
+            </a>
             {this.props.serverRepoLink && (
               <>
                 {" ∙ "}
-                <a href={this.props.serverRepoLink}>Server Repo</a>
+                <a
+                  href={this.props.serverRepoLink}
+                  rel="noopener noreferrer"
+                  target="_blank"
+                >
+                  Server Repo
+                </a>
               </>
             )}
           </div>

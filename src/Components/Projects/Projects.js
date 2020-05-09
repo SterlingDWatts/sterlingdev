@@ -14,7 +14,8 @@ import "./Projects.css";
 class Projects extends Component {
   render() {
     return (
-      <Section className="Projects" id="projects">
+      <Section className="Projects">
+        <div id="projects"> </div>
         <header>
           <h2>Projects</h2>
         </header>
@@ -35,17 +36,31 @@ class Projects extends Component {
               by topic to make it easy to cement the knowledge.
             </p>
             <div className="Project__icons">
-              <FontAwesomeIcon className="Project--tech-icon" icon={faReact} />{" "}
-              <FontAwesomeIcon className="Project--tech-icon" icon={faHtml5} />{" "}
+              <FontAwesomeIcon
+                className="Project--tech-icon"
+                icon={faReact}
+                title="React"
+              />{" "}
+              <FontAwesomeIcon
+                className="Project--tech-icon"
+                icon={faHtml5}
+                title="HTML5"
+              />{" "}
               <FontAwesomeIcon
                 className="Project--tech-icon"
                 icon={faCss3Alt}
+                title="CSS3"
               />{" "}
               <FontAwesomeIcon
                 className="Project--tech-icon"
                 icon={faJsSquare}
+                title="JavaScript"
               />
-              <FontAwesomeIcon className="Project--tech-icon" icon={faNodeJs} />
+              <FontAwesomeIcon
+                className="Project--tech-icon"
+                icon={faNodeJs}
+                title="Node"
+              />
             </div>
           </Project>
           <Project
@@ -63,17 +78,31 @@ class Projects extends Component {
               an intuitive "what you see is what you get" editor.
             </p>
             <div className="Project__icons">
-              <FontAwesomeIcon className="Project--tech-icon" icon={faReact} />{" "}
-              <FontAwesomeIcon className="Project--tech-icon" icon={faHtml5} />{" "}
+              <FontAwesomeIcon
+                className="Project--tech-icon"
+                icon={faReact}
+                title="React"
+              />{" "}
+              <FontAwesomeIcon
+                className="Project--tech-icon"
+                icon={faHtml5}
+                title="HTML5"
+              />{" "}
               <FontAwesomeIcon
                 className="Project--tech-icon"
                 icon={faCss3Alt}
+                title="CSS3"
               />{" "}
               <FontAwesomeIcon
                 className="Project--tech-icon"
                 icon={faJsSquare}
+                title="JavaScript"
               />
-              <FontAwesomeIcon className="Project--tech-icon" icon={faNodeJs} />
+              <FontAwesomeIcon
+                className="Project--tech-icon"
+                icon={faNodeJs}
+                title="Node"
+              />
             </div>
           </Project>
           <Project
@@ -94,14 +123,20 @@ class Projects extends Component {
               fun going!
             </p>
             <div className="Project__icons">
-              <FontAwesomeIcon className="Project--tech-icon" icon={faHtml5} />{" "}
+              <FontAwesomeIcon
+                className="Project--tech-icon"
+                icon={faHtml5}
+                title="HTML5"
+              />{" "}
               <FontAwesomeIcon
                 className="Project--tech-icon"
                 icon={faCss3Alt}
+                title="CSS3"
               />{" "}
               <FontAwesomeIcon
                 className="Project--tech-icon"
                 icon={faJsSquare}
+                title="JavaScript"
               />
             </div>
           </Project>

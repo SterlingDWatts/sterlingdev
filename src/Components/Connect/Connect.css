@@ -1,16 +1,22 @@
 .Connect {
   height: calc(100vh - 56px);
   min-height: 526px;
-  background-color: #439688;
+  background-color: #00685b;
 }
 
 .Connect.Section {
   padding: 0;
 }
 
+#connect {
+  position: relative;
+  top: -56px;
+  visibility: hidden;
+}
+
 .Connect h2,
 .Connect a {
-  color: #fcd734;
+  color: #ffff6b;
 }
 
 .Connect--picture-container {
@@ -41,6 +47,7 @@
   row-gap: 16px;
   text-align: left;
   line-height: 1;
+  color: white;
 }
 
 @media screen and (min-width: 500px) {

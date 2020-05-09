@@ -5,11 +5,12 @@ import "./Connect.css";
 class Connect extends Component {
   render() {
     return (
-      <Section className="Connect" id="connect">
+      <Section className="Connect">
         <div className="Connect--picture-container">
           <div className="Connect--picture"></div>
         </div>
         <div className="Connect--info">
+          <div id="connect"> </div>
           <header>
             <h2>Connect</h2>
           </header>
