@@ -3,7 +3,6 @@
 exports[`Connect Component renders the UI as expected 1`] = `
 <section
   className="Connect Section"
-  id="connect"
 >
   <div
     className="Connect--picture-container"
@@ -15,6 +14,11 @@ exports[`Connect Component renders the UI as expected 1`] = `
   <div
     className="Connect--info"
   >
+    <div
+      id="connect"
+    >
+       
+    </div>
     <header>
       <h2>
         Connect
