@@ -11,6 +11,12 @@
   padding: 52px 0 0;
 }
 
+#sterling {
+  position: relative;
+  top: -56px;
+  visibility: hidden;
+}
+
 .Hero__container {
   height: 100%;
   width: 100%;

@@ -9,7 +9,13 @@ describe("Project Component", () => {
     const div = document.createElement("div");
     ReactDOM.render(
       <BrowserRouter>
-        <Project />
+        <Project
+          picture="https://www.pic.com/pic.png"
+          alt="project picture"
+          name="project"
+          siteLink="https://www.site.com"
+          clientLink="https://www.site.com"
+        />
       </BrowserRouter>,
       div
     );
@@ -20,7 +26,13 @@ describe("Project Component", () => {
     const tree = renderer
       .create(
         <BrowserRouter>
-          <Project />
+          <Project
+            picture="https://www.pic.com/pic.png"
+            alt="project picture"
+            name="project"
+            siteLink="https://www.site.com"
+            clientLink="https://www.site.com"
+          />
         </BrowserRouter>
       )
       .toJSON();

@@ -3,8 +3,12 @@
 exports[`Hero Component renders the UI as expected 1`] = `
 <section
   className="Hero Section"
-  id="sterling"
 >
+  <div
+    id="sterling"
+  >
+     
+  </div>
   <div
     className="Hero__container"
   >

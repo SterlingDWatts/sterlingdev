@@ -4,15 +4,21 @@ exports[`Project Component renders the UI as expected 1`] = `
 <div
   className="Project"
 >
-  <img />
+  <img
+    alt="project picture"
+    src="https://www.pic.com/pic.png"
+  />
   <div
     className="Project--info"
   >
-    <h3 />
+    <h3>
+      project
+    </h3>
     <div
       className="Project--links"
     >
       <a
+        href="https://www.site.com"
         rel="noopener noreferrer"
         target="_blank"
       >
@@ -22,6 +28,7 @@ exports[`Project Component renders the UI as expected 1`] = `
       ∙
        
       <a
+        href="https://www.site.com"
         rel="noopener noreferrer"
         target="_blank"
       >

@@ -9,7 +9,7 @@ describe("Section Component", () => {
     const div = document.createElement("div");
     ReactDOM.render(
       <BrowserRouter>
-        <Section />
+        <Section className="hero" />
       </BrowserRouter>,
       div
     );
@@ -20,7 +20,7 @@ describe("Section Component", () => {
     const tree = renderer
       .create(
         <BrowserRouter>
-          <Section />
+          <Section className="hero" />
         </BrowserRouter>
       )
       .toJSON();

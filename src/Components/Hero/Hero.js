@@ -5,7 +5,8 @@ import "./Hero.css";
 class Hero extends Component {
   render() {
     return (
-      <Section className="Hero" id="sterling">
+      <Section className="Hero">
+        <div id="sterling"> </div>
         <div className="Hero__container">
           <div className="Hero__header">
             <header>

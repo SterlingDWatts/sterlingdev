@@ -2,6 +2,6 @@
 
 exports[`Section Component renders the UI as expected 1`] = `
 <section
-  className="undefined Section"
+  className="hero Section"
 />
 `;
