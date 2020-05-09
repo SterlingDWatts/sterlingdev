@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import "./Project.css";
 
-const SITE_REGEX = /(https:\/\/[?a-zA-Z0-9@:%._\+~#=-]{2,256})\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/;
+const SITE_REGEX = /(https:\/\/[?a-zA-Z0-9@:%._+~#=-]{2,256})\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)/;
 
 class Project extends Component {
   render() {
@@ -52,7 +52,7 @@ Project.propTypes = {
   name: PropTypes.string.isRequired,
   picture: (props, propName, componentName) => {
     const prop = props[propName];
-    const pic_regex = /(https:\/\/[?a-zA-Z0-9@:%._\+~#=-]{2,256})\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)\.[pPnNgG]{3}/;
+    const pic_regex = /(https:\/\/[?a-zA-Z0-9@:%._+~#=-]{2,256})\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)\.[pPnNgG]{3}/;
 
     if (!prop) {
       return new Error(

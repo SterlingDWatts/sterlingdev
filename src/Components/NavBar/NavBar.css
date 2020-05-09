@@ -6,8 +6,17 @@
   width: 100%;
   position: fixed;
   top: 0;
+  transition-property: top;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
   left: 0;
   right: 0;
+  box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.15),
+    0 1px 4px 1px rgba(0, 0, 0, 0.15);
+}
+
+.NavBar.NavBar--hidden {
+  top: -56px;
 }
 
 .NavBar__container {
