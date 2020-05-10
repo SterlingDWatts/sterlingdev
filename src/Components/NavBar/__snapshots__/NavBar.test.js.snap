@@ -9,25 +9,25 @@ exports[`NavBar Component renders the UI as expected 1`] = `
   >
     <a
       className="NavBar--marquee"
-      href="/sterling"
+      href="/"
       onClick={[Function]}
     >
       Sterling | Dev
     </a>
     <a
-      href="/about"
+      href="/#about"
       onClick={[Function]}
     >
       About
     </a>
     <a
-      href="/projects"
+      href="/#projects"
       onClick={[Function]}
     >
       Projects
     </a>
     <a
-      href="/connect"
+      href="/#connect"
       onClick={[Function]}
     >
       Connect

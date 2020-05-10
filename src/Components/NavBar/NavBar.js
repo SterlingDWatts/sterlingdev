@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { HashLink } from "react-router-hash-link";
 import classnames from "classnames";
 import "./NavBar.css";
 
@@ -7,6 +8,7 @@ class NavBar extends Component {
   state = {
     prevScrollPos: window.pageYOffset,
     visible: true,
+    linkClicked: false,
   };
 
   componentDidMount() {
@@ -18,14 +20,32 @@ class NavBar extends Component {
   }
 
   handleScroll = () => {
-    const { prevScrollPos } = this.state;
+    const { prevScrollPos, linkClicked } = this.state;
 
     const currentScrollPos = window.pageYOffset;
     const visible = prevScrollPos > currentScrollPos;
 
+    if (!linkClicked) {
+      this.setState({
+        prevScrollPos: currentScrollPos,
+        visible,
+      });
+    } else {
+      this.setState({
+        prevScrollPos: currentScrollPos,
+        visible: true,
+        linkClicked: false,
+      });
+    }
+  };
+
+  handleScrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
+  handleLinkClick = () => {
     this.setState({
-      prevScrollPos: currentScrollPos,
-      visible,
+      linkClicked: true,
     });
   };
 
@@ -37,12 +57,22 @@ class NavBar extends Component {
         })}
       >
         <div className="NavBar__container">
-          <Link className="NavBar--marquee" to="/sterling">
+          <Link
+            className="NavBar--marquee"
+            to="/"
+            onClick={this.handleScrollToTop}
+          >
             Sterling | Dev
           </Link>
-          <Link to="/about">About</Link>
-          <Link to="/projects">Projects</Link>
-          <Link to="/connect">Connect</Link>
+          <HashLink to="/#about" onClick={this.handleLinkClick}>
+            About
+          </HashLink>
+          <HashLink to="/#projects" onClick={this.handleLinkClick}>
+            Projects
+          </HashLink>
+          <HashLink to="/#connect" onClick={this.handleLinkClick}>
+            Connect
+          </HashLink>
         </div>
       </nav>
     );
