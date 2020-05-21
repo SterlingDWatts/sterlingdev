@@ -64,10 +64,10 @@ class Projects extends Component {
             </div>
           </Project>
           <Project
-            picture="https://sterling-blog-app.now.sh/sterling-blog-desktop-2.png"
+            picture="https://sterlingblog.now.sh/sterling-blog-desktop-2.png"
             alt="Sterling | Blog Home Page for large screens"
             name="Sterling | Blog"
-            siteLink="https://sterling-blog-app.now.sh"
+            siteLink="https://sterlingblog.now.sh/"
             clientLink="https://github.com/SterlingDWatts/sterling-blog"
             serverRepoLink="https://github.com/SterlingDWatts/sterling-blog-server"
           >
