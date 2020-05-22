@@ -8,6 +8,7 @@ class Resume extends Component {
       <div className="Resume">
         <Helmet>
           <title>Sterling | Resume</title>
+          <meta property="og:title" content="Sterling | Dev" />
         </Helmet>
         <div className="Resume--top">
           <section className="Resume--hero">
