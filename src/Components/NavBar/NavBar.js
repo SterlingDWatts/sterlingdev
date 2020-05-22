@@ -85,7 +85,7 @@ class NavBar extends Component {
         <HashLink to="/#connect" onClick={this.handleLinkClick}>
           Connect
         </HashLink>
-        <Link to="resume" onClick={this.handleCloseSubNav}>
+        <Link to="resume" onClick={this.handleScrollToTop}>
           Resume
         </Link>
       </div>
@@ -132,7 +132,11 @@ class NavBar extends Component {
           >
             Connect
           </HashLink>
-          <Link to="resume" className="NavBar--large">
+          <Link
+            to="resume"
+            className="NavBar--large"
+            onClick={this.handleScrollToTop}
+          >
             Resume
           </Link>
         </div>

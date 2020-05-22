@@ -3,10 +3,6 @@ import { Helmet } from "react-helmet";
 import "./Resume.css";
 
 class Resume extends Component {
-  componentDidMount() {
-    window.scrollTo(0, 0);
-  }
-
   render() {
     return (
       <div className="Resume">
@@ -67,20 +63,28 @@ class Resume extends Component {
             </section>
             <section className="Resume--skills">
               <h2>SKILLS</h2>
-              <p>
-                <b>Front-End:</b> HTML5, CSS3, JavaScript ES6, React, Express,
-                jQuery
-              </p>
-              <p>
-                <b>Back-End:</b> Node.js, PostgreSQL
-              </p>
-              <p>
-                <b>Dev Tools:</b> Git, GitHub, Chrome Dev Tools
-              </p>
-              <p>
-                <b>Additional:</b> Mocha, Chai, Enzyme, Heroku, NPM, Python,
-                Pandas, NumPy, Seaborn, Matplotlib
-              </p>
+              <div className="Resume--skill">
+                <p>
+                  <b>Front-End:</b> HTML5, CSS3, JavaScript ES6, React, Express,
+                  jQuery
+                </p>
+              </div>
+              <div className="Resume--skill">
+                <p>
+                  <b>Back-End:</b> Node.js, PostgreSQL
+                </p>
+              </div>
+              <div className="Resume--skill">
+                <p>
+                  <b>Dev Tools:</b> Git, GitHub, Chrome Dev Tools
+                </p>
+              </div>
+              <div className="Resume--skill">
+                <p>
+                  <b>Additional:</b> Mocha, Chai, Enzyme, Heroku, NPM, Python,
+                  Pandas, NumPy, Seaborn, Matplotlib
+                </p>
+              </div>
             </section>
             <section className="Resume--education">
               <h2>EDUCATION</h2>

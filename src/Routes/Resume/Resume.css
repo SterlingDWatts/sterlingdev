@@ -49,7 +49,9 @@
   margin-left: 16px;
 }
 
-.Resume--project + .Resume--project {
+.Resume--project + .Resume--project,
+.Resume--skill + .Resume--skill,
+.Resume--course + .Resume--course {
   margin-top: 16px;
 }
 
