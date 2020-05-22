@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Helmet } from "react-helmet";
 import "./Resume.css";
 
 class Resume extends Component {
@@ -9,6 +10,9 @@ class Resume extends Component {
   render() {
     return (
       <div className="Resume">
+        <Helmet>
+          <title>Sterling | Resume</title>
+        </Helmet>
         <div className="Resume--top">
           <section className="Resume--hero">
             <header>

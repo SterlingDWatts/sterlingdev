@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Helmet } from "react-helmet";
 import Hero from "../../Components/Hero/Hero";
 import About from "../../Components/About/About";
 import Projects from "../../Components/Projects/Projects";
@@ -9,6 +10,9 @@ class Landing extends Component {
   render() {
     return (
       <div className="Landing">
+        <Helmet>
+          <title>Sterling | Dev</title>
+        </Helmet>
         <Hero />
         <About />
         <Projects />
