@@ -51,7 +51,8 @@
 
 .Resume--project + .Resume--project,
 .Resume--skill + .Resume--skill,
-.Resume--course + .Resume--course {
+.Resume--course + .Resume--course,
+.Resume--job + .Resume--job {
   margin-top: 16px;
 }
 
