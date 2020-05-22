@@ -1,0 +1,108 @@
+.Resume {
+  padding: 76px 16px 16px;
+  text-align: left;
+}
+
+.Resume h1 {
+  font-size: 40px;
+  line-height: 1;
+}
+
+.Resume--hero span {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.Resume h2 {
+  color: #003d32;
+  font-size: 22px;
+  font-weight: 600;
+  margin: 16px 0;
+  text-align: center;
+}
+
+.Resume b {
+  font-weight: 600;
+}
+
+.Resume h3 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.Resume--education h3 {
+  font-size: 18px;
+}
+
+.Resume--project h3 span {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.Resume ul {
+  list-style-type: disc;
+  font-size: 18px;
+  margin-top: 8px;
+}
+
+.Resume li {
+  margin-left: 16px;
+}
+
+.Resume--project + .Resume--project {
+  margin-top: 16px;
+}
+
+.Resume a {
+  color: #c5a600;
+}
+
+.Resume--download {
+  margin: 16px 0;
+  text-align: center;
+  font-size: 22px;
+}
+
+@media screen and (min-width: 750px) {
+  .Resume {
+    max-width: 944px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .Resume h1 {
+    font-size: 64px;
+  }
+
+  .Resume--top {
+    margin-bottom: 32px;
+  }
+
+  .Resume h2 {
+    text-align: left;
+    margin-top: 32px;
+  }
+
+  .Resume--top,
+  .Resume--bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .Resume--hero,
+  .Resume--left {
+    width: calc((100% - 32px) / 7 * 5);
+    order: 0;
+  }
+
+  .Resume--contact,
+  .Resume--right {
+    width: calc((100% - 32px) / 7 * 2);
+    order: 1;
+  }
+
+  .Resume--contact h2 {
+    display: none;
+  }
+}

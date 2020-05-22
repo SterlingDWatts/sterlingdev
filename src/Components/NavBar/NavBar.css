@@ -13,6 +13,8 @@
   right: 0;
   box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.15),
     0 1px 4px 1px rgba(0, 0, 0, 0.15);
+  height: 60px;
+  z-index: 1;
 }
 
 .NavBar.NavBar--hidden {
@@ -26,8 +28,11 @@
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: flex-start;
   align-items: center;
+  z-index: 1;
+  position: absolute;
+  background-color: #003d32;
 }
 
 .NavBar a {
@@ -39,8 +44,69 @@
   font-size: 20px;
 }
 
+.NavBar--hamburger {
+  margin: 0;
+  border: 0;
+  padding: 0;
+  margin-right: 16px;
+  background-color: rgba(0, 0, 0, 0);
+  color: #fcd734;
+  font-size: 24px;
+  outline: none;
+  width: 17.5px;
+  text-align: center;
+}
+
+.NavBar--large {
+  display: none;
+}
+
+.SubNav {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  font-size: 24px;
+  padding-bottom: 16px;
+  position: absolute;
+  top: 60px;
+  z-index: 0;
+  background-color: #003d32;
+  width: 100%;
+  transition-property: top;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+}
+
+.SubNav a {
+  margin-left: 52px;
+}
+
+.SubNav a + a {
+  margin-top: 16px;
+}
+
+.SubNav--hidden {
+  top: -160px;
+}
+
 @media screen and (min-width: 400px) {
   .NavBar--marquee {
     font-size: 24px;
+  }
+}
+
+@media screen and (min-width: 750px) {
+  .NavBar__container {
+    justify-content: space-between;
+    position: initial;
+  }
+
+  .NavBar--large {
+    display: initial;
+  }
+
+  .NavBar--hamburger,
+  .SubNav {
+    display: none;
   }
 }

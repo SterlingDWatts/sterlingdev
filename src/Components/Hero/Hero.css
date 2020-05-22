@@ -3,12 +3,12 @@
   color: white;
   height: 100vh;
   min-height: 585px;
-  padding-top: 52px;
+  padding-top: 60px;
   text-align: left;
 }
 
 .Hero.Section {
-  padding: 52px 0 0;
+  padding: 60px 0 0;
 }
 
 #sterling {
@@ -69,7 +69,7 @@
 
 @media screen and (min-width: 350px) {
   .Hero.Section {
-    padding: 56px 0 0;
+    padding: 60px 0 0;
   }
 }
 
