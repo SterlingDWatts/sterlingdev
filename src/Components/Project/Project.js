@@ -1,50 +1,40 @@
-import React, { Component } from "react";
+import React from "react";
 import PropTypes from "prop-types";
 import "./Project.css";
 
 const SITE_REGEX = /(https:\/\/[?a-zA-Z0-9@:%._+~#=-]{2,256})\.[a-z]{2,6}\b([-a-zA-Z0-9@:%_+.~#?&//=]*)/;
 
-class Project extends Component {
-  render() {
-    return (
-      <div className="Project">
-        <img src={this.props.picture} alt={this.props.alt} />
-        <div className="Project--info">
-          <h3>{this.props.name}</h3>
-          <div className="Project--links">
-            <a
-              href={this.props.siteLink}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Site
-            </a>{" "}
-            ∙{" "}
-            <a
-              href={this.props.clientLink}
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              Client Repo
-            </a>
-            {this.props.serverRepoLink && (
-              <>
-                {" ∙ "}
-                <a
-                  href={this.props.serverRepoLink}
-                  rel="noopener noreferrer"
-                  target="_blank"
-                >
-                  Server Repo
-                </a>
-              </>
-            )}
-          </div>
-          {this.props.children}
+function Project(props) {
+  return (
+    <div className="Project">
+      <img src={props.picture} alt={props.alt} />
+      <div className="Project--info">
+        <h3>{props.name}</h3>
+        <div className="Project--links">
+          <a href={props.siteLink} rel="noopener noreferrer" target="_blank">
+            Site
+          </a>{" "}
+          ∙{" "}
+          <a href={props.clientLink} rel="noopener noreferrer" target="_blank">
+            Client Repo
+          </a>
+          {props.serverRepoLink && (
+            <>
+              {" ∙ "}
+              <a
+                href={props.serverRepoLink}
+                rel="noopener noreferrer"
+                target="_blank"
+              >
+                Server Repo
+              </a>
+            </>
+          )}
         </div>
+        {props.children}
       </div>
-    );
-  }
+    </div>
+  );
 }
 
 Project.propTypes = {
