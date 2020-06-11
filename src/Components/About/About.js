@@ -10,7 +10,7 @@ function About() {
         <h2>About Me</h2>
       </header>
       <p>
-        I love to code! I am taking the Full Stack Web Developer bootcamp with
+        I love to code! I have taken the Full Stack Web Developer bootcamp with
         Bloc and have studied Data Analysis on DataQuest. What I appreciate most
         about coding is being able to make something that people can use and
         will enhance their lives. I'm a problem solver and a technophile which I
