@@ -15,7 +15,7 @@ exports[`NavBar Component renders the UI as expected 1`] = `
         aria-hidden="true"
         className="svg-inline--fa fa-bars fa-w-14 "
         data-icon="bars"
-        data-prefix="far"
+        data-prefix="fal"
         focusable="false"
         role="img"
         style={Object {}}
@@ -23,7 +23,7 @@ exports[`NavBar Component renders the UI as expected 1`] = `
         xmlns="http://www.w3.org/2000/svg"
       >
         <path
-          d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"
+          d="M442 114H6a6 6 0 0 1-6-6V84a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6zm0 160H6a6 6 0 0 1-6-6v-24a6 6 0 0 1 6-6h436a6 6 0 0 1 6 6v24a6 6 0 0 1-6 6z"
           fill="currentColor"
           style={Object {}}
         />
@@ -72,9 +72,55 @@ exports[`NavBar Component renders the UI as expected 1`] = `
       href="/#about"
       onClick={[Function]}
     >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-user-tie fa-w-14 "
+        data-icon="user-tie"
+        data-prefix="fal"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 448 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M224 256c70.7 0 128-57.3 128-128S294.7 0 224 0 96 57.3 96 128s57.3 128 128 128zm0-224c52.9 0 96 43.1 96 96s-43.1 96-96 96-96-43.1-96-96 43.1-96 96-96zm91.9 272.2L276.2 442l-33.9-101.7 25-25c10.1-10.1 2.9-27.3-11.3-27.3h-64c-14.3 0-21.4 17.2-11.3 27.3l25 25L171.8 442l-39.7-137.7C58.9 305.5 0 365 0 438.4V464c0 26.5 21.5 48 48 48h352c26.5 0 48-21.5 48-48v-25.6c0-73.4-58.9-132.9-132.1-134.2zM48 480c-8.8 0-16-7.2-16-16v-25.6c0-47.2 32.8-87.5 76.9-98.9L149.5 480H48zm144.9 0l31.1-93.4 31.1 93.4h-62.2zM416 464c0 8.8-7.2 16-16 16H298.5L339 339.5c44.1 11.4 76.9 51.7 76.9 98.9V464z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </a>
+    <a
+      className="SubNav--link-name"
+      href="/#about"
+      onClick={[Function]}
+    >
       About
     </a>
     <a
+      href="/#projects"
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-browser fa-w-16 "
+        data-icon="browser"
+        data-prefix="fal"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M464 32H48C21.5 32 0 53.5 0 80v352c0 26.5 21.5 48 48 48h416c26.5 0 48-21.5 48-48V80c0-26.5-21.5-48-48-48zM32 80c0-8.8 7.2-16 16-16h48v64H32V80zm448 352c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16V160h448v272zm0-304H128V64h336c8.8 0 16 7.2 16 16v48z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </a>
+    <a
+      className="SubNav--link-name"
       href="/#projects"
       onClick={[Function]}
     >
@@ -84,9 +130,55 @@ exports[`NavBar Component renders the UI as expected 1`] = `
       href="/#connect"
       onClick={[Function]}
     >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-address-card fa-w-18 "
+        data-icon="address-card"
+        data-prefix="fal"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 576 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M512 32H64C28.7 32 0 60.7 0 96v320c0 35.3 28.7 64 64 64h448c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64zm32 384c0 17.6-14.4 32-32 32H64c-17.6 0-32-14.4-32-32V96c0-17.6 14.4-32 32-32h448c17.6 0 32 14.4 32 32v320zm-72-128H360c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zm0-64H360c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zm0-64H360c-4.4 0-8 3.6-8 8v16c0 4.4 3.6 8 8 8h112c4.4 0 8-3.6 8-8v-16c0-4.4-3.6-8-8-8zM208 288c44.2 0 80-35.8 80-80s-35.8-80-80-80-80 35.8-80 80 35.8 80 80 80zm0-128c26.5 0 48 21.5 48 48s-21.5 48-48 48-48-21.5-48-48 21.5-48 48-48zm46.8 144c-19.5 0-24.4 7-46.8 7s-27.3-7-46.8-7c-21.2 0-41.8 9.4-53.8 27.4C100.2 342.1 96 355 96 368.9V392c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-23.1c0-7 2.1-13.8 6-19.6 5.6-8.3 15.8-13.2 27.3-13.2 12.4 0 20.8 7 46.8 7 25.9 0 34.3-7 46.8-7 11.5 0 21.7 5 27.3 13.2 3.9 5.8 6 12.6 6 19.6V392c0 4.4 3.6 8 8 8h16c4.4 0 8-3.6 8-8v-23.1c0-13.9-4.2-26.8-11.4-37.5-12.3-18-32.9-27.4-54-27.4z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </a>
+    <a
+      className="SubNav--link-name"
+      href="/#connect"
+      onClick={[Function]}
+    >
       Connect
     </a>
     <a
+      href="/resume"
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-file-user fa-w-12 "
+        data-icon="file-user"
+        data-prefix="fal"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 384 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M369.9 97.98L286.02 14.1c-9-9-21.2-14.1-33.89-14.1H47.99C21.5.1 0 21.6 0 48.09v415.92C0 490.5 21.5 512 47.99 512h288.02c26.49 0 47.99-21.5 47.99-47.99V131.97c0-12.69-5.1-24.99-14.1-33.99zM256.03 32.59c2.8.7 5.3 2.1 7.4 4.2l83.88 83.88c2.1 2.1 3.5 4.6 4.2 7.4h-95.48V32.59zM272 480.01H112v-31.15c0-18.38 13.05-32.86 33.25-32.86 12.45 0 20.8 6.99 46.75 6.99 25.5 0 34.56-6.99 46.75-6.99 20.16 0 33.25 14.43 33.25 32.86v31.15zm80.01-16c0 8.8-7.2 16-16 16H304v-31.15c0-13.88-4.21-26.77-11.41-37.48-12.08-17.94-32.67-27.38-53.84-27.38-19.46 0-24.36 6.99-46.75 6.99-22.41 0-27.26-6.99-46.75-6.99-21.17 0-41.76 9.44-53.83 27.38-7.21 10.7-11.42 23.6-11.42 37.48v31.15H47.99c-8.8 0-16-7.2-16-16V48.09c0-8.8 7.2-16.09 16-16.09h176.04v104.07c0 13.3 10.7 23.93 24 23.93h103.98v304.01zM112 288c0 44.18 35.82 80 80 80s80-35.82 80-80c0-44.19-35.82-80-80-80s-80 35.81-80 80zm128 0c0 26.47-21.53 48-48 48s-48-21.53-48-48 21.53-48 48-48 48 21.53 48 48z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </a>
+    <a
+      className="SubNav--link-name"
       href="/resume"
       onClick={[Function]}
     >

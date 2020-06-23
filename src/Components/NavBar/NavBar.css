@@ -22,6 +22,7 @@
 }
 
 .NavBar__container {
+  background-color: #003d32;
   padding: 16px;
   width: 100%;
   max-width: 944px;
@@ -54,8 +55,9 @@
   color: #fcd734;
   font-size: 24px;
   outline: none;
-  width: 17.5px;
+  width: 27px;
   text-align: center;
+  cursor: pointer;
 }
 
 .NavBar--large {
@@ -63,11 +65,14 @@
 }
 
 .SubNav {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  font-size: 24px;
-  padding-bottom: 32px;
+  display: grid;
+  grid-template-columns: 27px auto;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  row-gap: 16px;
+  column-gap: 16px;
+  font-size: 20px;
+  line-height: 1;
+  padding: 0 16px 32px 16px;
   position: absolute;
   top: 60px;
   z-index: 0;
@@ -80,17 +85,18 @@
     0 1px 4px 1px rgba(0, 0, 0, 0.15);
 }
 
-.SubNav a {
-  margin-left: 52px;
-}
-
-.SubNav a + a {
-  margin-top: 16px;
-}
-
 .SubNav--hidden {
   top: -160px;
   box-shadow: none;
+}
+
+.SubNav--link-name {
+  text-align: left;
+  font-size: 24px;
+}
+
+.SubNav svg {
+  margin-top: 2px;
 }
 
 @media screen and (min-width: 400px) {

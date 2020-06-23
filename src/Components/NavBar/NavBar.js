@@ -2,7 +2,14 @@ import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes } from "@fortawesome/pro-regular-svg-icons";
+import {
+  faBars,
+  faTimes,
+  faUserTie,
+  faBrowser,
+  faAddressCard,
+  faFileUser,
+} from "@fortawesome/pro-light-svg-icons";
 import classnames from "classnames";
 import "./NavBar.css";
 
@@ -77,15 +84,43 @@ class NavBar extends Component {
         })}
       >
         <HashLink to="/#about" onClick={this.handleLinkClick}>
+          <FontAwesomeIcon icon={faUserTie} />
+        </HashLink>
+        <HashLink
+          to="/#about"
+          onClick={this.handleLinkClick}
+          className="SubNav--link-name"
+        >
           About
         </HashLink>
         <HashLink to="/#projects" onClick={this.handleLinkClick}>
+          <FontAwesomeIcon icon={faBrowser} />
+        </HashLink>
+        <HashLink
+          to="/#projects"
+          onClick={this.handleLinkClick}
+          className="SubNav--link-name"
+        >
           Projects
         </HashLink>
         <HashLink to="/#connect" onClick={this.handleLinkClick}>
+          <FontAwesomeIcon icon={faAddressCard} />
+        </HashLink>
+        <HashLink
+          to="/#connect"
+          onClick={this.handleLinkClick}
+          className="SubNav--link-name"
+        >
           Connect
         </HashLink>
-        <Link to="resume" onClick={this.handleScrollToTop}>
+        <Link to="resume" onClick={this.handleLinkClick}>
+          <FontAwesomeIcon icon={faFileUser} />
+        </Link>
+        <Link
+          to="resume"
+          onClick={this.handleScrollToTop}
+          className="SubNav--link-name"
+        >
           Resume
         </Link>
       </div>
