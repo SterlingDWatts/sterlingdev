@@ -13,6 +13,8 @@ import {
 import classnames from "classnames";
 import "./NavBar.css";
 
+// TODO convert to functional component w/hooks
+
 class NavBar extends Component {
   state = {
     prevScrollPos: window.pageYOffset,
