@@ -20,12 +20,12 @@
     "react-helmet": "^6.0.0",
     "react-router-dom": "^5.1.2",
     "react-router-hash-link": "^1.2.2",
-    "react-scripts": "3.4.1"
+    "react-scripts": "^3.4.1"
   },
   "scripts": {
     "prettier-watch": "onchange \"**/*.js\" -- prettier --write {{changed}}",
     "start": "react-scripts start",
-    "prebuild": "CI=true react-scripts test --colors",
+    "prebuild": "react-scripts test --colors",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",

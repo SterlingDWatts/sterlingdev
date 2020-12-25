@@ -2,7 +2,7 @@
   background-color: #003d32;
   color: #fcd734;
   line-height: 1;
-  font-size: 16px;
+  font-size: 20px;
   width: 100%;
   position: fixed;
   top: 0;
@@ -40,10 +40,6 @@
 .NavBar a {
   color: #fcd734;
   text-decoration: none;
-}
-
-.NavBar--marquee {
-  font-size: 20px;
 }
 
 .NavBar--hamburger {
@@ -92,15 +88,11 @@
 
 .SubNav--link-name {
   text-align: left;
-  font-size: 24px;
-}
-
-.SubNav svg {
-  margin-top: 2px;
 }
 
 @media screen and (min-width: 400px) {
-  .NavBar--marquee {
+  .NavBar,
+  .SubNav {
     font-size: 24px;
   }
 }
