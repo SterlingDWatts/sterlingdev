@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/pro-light-svg-icons";
 import classnames from "classnames";
@@ -75,27 +74,27 @@ function NavBar() {
         <Link className="NavBar--marquee" to="/" onClick={handleScrollToTop}>
           Sterling | Dev
         </Link>
-        <HashLink
+        <Link
           className="NavBar--large"
-          to="/#about"
+          to={{ pathname: "/", hash: "#about" }}
           onClick={handleLinkClick}
         >
           About
-        </HashLink>
-        <HashLink
+        </Link>
+        <Link
           className="NavBar--large"
-          to="/#projects"
+          to={{ pathname: "/", hash: "#projects" }}
           onClick={handleLinkClick}
         >
           Projects
-        </HashLink>
-        <HashLink
+        </Link>
+        <Link
           className="NavBar--large"
-          to="/#connect"
+          to={{ pathname: "/", hash: "#connect" }}
           onClick={handleLinkClick}
         >
           Connect
-        </HashLink>
+        </Link>
         <Link to="resume" className="NavBar--large" onClick={handleScrollToTop}>
           Resume
         </Link>

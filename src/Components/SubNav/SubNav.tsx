@@ -1,6 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { HashLink } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faUserTie,
@@ -11,39 +10,49 @@ import {
 import classnames from "classnames";
 import "./SubNav.css";
 
-function SubNav({ showSubNav, linkClick, scrollToTop }) {
+type AppProps = {
+  showSubNav: boolean;
+  linkClick: () => void;
+  scrollToTop: () => void;
+};
+
+function SubNav({ showSubNav, linkClick, scrollToTop }: AppProps) {
   return (
     <div
       className={classnames("SubNav", {
         "SubNav--hidden": !showSubNav,
       })}
     >
-      <HashLink to="/#about" onClick={linkClick}>
+      <Link to={{ pathname: "/", hash: "#about" }} onClick={linkClick}>
         <FontAwesomeIcon icon={faUserTie} />
-      </HashLink>
-      <HashLink to="/#about" onClick={linkClick} className="SubNav--link-name">
+      </Link>
+      <Link
+        to={{ pathname: "/", hash: "#about" }}
+        onClick={linkClick}
+        className="SubNav--link-name"
+      >
         About
-      </HashLink>
-      <HashLink to="/#projects" onClick={linkClick}>
+      </Link>
+      <Link to={{ pathname: "/", hash: "#projects" }} onClick={linkClick}>
         <FontAwesomeIcon icon={faBrowser} />
-      </HashLink>
-      <HashLink
-        to="/#projects"
+      </Link>
+      <Link
+        to={{ pathname: "/", hash: "#projects" }}
         onClick={linkClick}
         className="SubNav--link-name"
       >
         Projects
-      </HashLink>
-      <HashLink to="/#connect" onClick={linkClick}>
+      </Link>
+      <Link to={{ pathname: "/", hash: "#connect" }} onClick={linkClick}>
         <FontAwesomeIcon icon={faAddressCard} />
-      </HashLink>
-      <HashLink
-        to="/#connect"
+      </Link>
+      <Link
+        to={{ pathname: "/", hash: "#connect" }}
         onClick={linkClick}
         className="SubNav--link-name"
       >
         Connect
-      </HashLink>
+      </Link>
       <Link to="resume" onClick={linkClick}>
         <FontAwesomeIcon icon={faFileUser} />
       </Link>

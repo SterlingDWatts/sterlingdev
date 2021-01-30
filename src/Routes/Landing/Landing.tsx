@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Helmet } from "react-helmet";
 import Hero from "../../Components/Hero/Hero";
 import About from "../../Components/About/About";
@@ -7,6 +7,16 @@ import Connect from "../../Components/Connect/Connect";
 import "./Landing.css";
 
 function Landing() {
+  useEffect(() => {
+    const { hash } = window.location;
+    if (hash !== "") {
+      setTimeout(() => {
+        const element = document.querySelector(hash);
+        if (element) element.scrollIntoView();
+      }, 0);
+    }
+  });
+
   return (
     <div className="Landing">
       <Helmet>
