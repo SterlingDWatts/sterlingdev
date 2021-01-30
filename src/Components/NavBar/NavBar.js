@@ -1,184 +1,112 @@
-import React, { Component } from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faBars,
-  faTimes,
-  faUserTie,
-  faBrowser,
-  faAddressCard,
-  faFileUser,
-} from "@fortawesome/pro-light-svg-icons";
+import { faBars, faTimes } from "@fortawesome/pro-light-svg-icons";
 import classnames from "classnames";
+import SubNav from "../SubNav/SubNav";
 import "./NavBar.css";
 
-class NavBar extends Component {
-  state = {
+function NavBar() {
+  const [state, setState] = useState({
     prevScrollPos: window.pageYOffset,
     visible: true,
     linkClicked: false,
     showSubNav: false,
-  };
+  });
 
-  componentDidMount() {
-    window.addEventListener("scroll", this.handleScroll);
-  }
+  useEffect(() => {
+    function handleScroll() {
+      const { prevScrollPos, linkClicked } = state;
+      const currentScrollPos = window.pageYOffset;
+      const visible = prevScrollPos > currentScrollPos;
 
-  componentWillUnmount() {
-    window.removeEventListener("scroll", this.handleScroll);
-  }
-
-  handleScroll = () => {
-    const { prevScrollPos, linkClicked } = this.state;
-
-    const currentScrollPos = window.pageYOffset;
-    const visible = prevScrollPos > currentScrollPos;
-
-    if (!linkClicked) {
-      this.setState({
+      setState({
         prevScrollPos: currentScrollPos,
-        visible,
-        showSubNav: false,
-      });
-    } else {
-      this.setState({
-        prevScrollPos: currentScrollPos,
-        visible: true,
+        visible: linkClicked ? true : visible,
         linkClicked: false,
         showSubNav: false,
       });
     }
-  };
 
-  handleScrollToTop = () => {
+    window.addEventListener("scroll", handleScroll);
+
+    return function cleanup() {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  });
+
+  function handleScrollToTop() {
     window.scrollTo(0, 0);
-    this.handleCloseSubNav();
-  };
-
-  handleCloseSubNav = () => {
-    this.setState({
+    setState({
+      ...state,
       showSubNav: false,
     });
-  };
+  }
 
-  handleLinkClick = () => {
-    this.setState({
+  function handleLinkClick() {
+    setState({
+      ...state,
       linkClicked: true,
+      showSubNav: false,
     });
-    this.handleCloseSubNav();
-  };
+  }
 
-  toggleNav = () => {
-    this.setState({
-      showSubNav: !this.state.showSubNav,
+  function toggleNav() {
+    const { showSubNav } = state;
+    setState({
+      ...state,
+      showSubNav: !showSubNav,
     });
-  };
+  }
 
-  renderSubNav = () => {
-    const { showSubNav } = this.state;
-    return (
-      <div
-        className={classnames("SubNav", {
-          "SubNav--hidden": !showSubNav,
-        })}
-      >
-        <HashLink to="/#about" onClick={this.handleLinkClick}>
-          <FontAwesomeIcon icon={faUserTie} />
-        </HashLink>
+  const { showSubNav, visible } = state;
+  const icon = showSubNav ? faTimes : faBars;
+  return (
+    <nav
+      className={classnames("NavBar", {
+        "NavBar--hidden": !visible,
+      })}
+    >
+      <div className="NavBar__container">
+        <button className="NavBar--hamburger" onClick={toggleNav}>
+          <FontAwesomeIcon icon={icon} />
+        </button>
+        <Link className="NavBar--marquee" to="/" onClick={handleScrollToTop}>
+          Sterling | Dev
+        </Link>
         <HashLink
+          className="NavBar--large"
           to="/#about"
-          onClick={this.handleLinkClick}
-          className="SubNav--link-name"
+          onClick={handleLinkClick}
         >
           About
         </HashLink>
-        <HashLink to="/#projects" onClick={this.handleLinkClick}>
-          <FontAwesomeIcon icon={faBrowser} />
-        </HashLink>
         <HashLink
+          className="NavBar--large"
           to="/#projects"
-          onClick={this.handleLinkClick}
-          className="SubNav--link-name"
+          onClick={handleLinkClick}
         >
           Projects
         </HashLink>
-        <HashLink to="/#connect" onClick={this.handleLinkClick}>
-          <FontAwesomeIcon icon={faAddressCard} />
-        </HashLink>
         <HashLink
+          className="NavBar--large"
           to="/#connect"
-          onClick={this.handleLinkClick}
-          className="SubNav--link-name"
+          onClick={handleLinkClick}
         >
           Connect
         </HashLink>
-        <Link to="resume" onClick={this.handleLinkClick}>
-          <FontAwesomeIcon icon={faFileUser} />
-        </Link>
-        <Link
-          to="resume"
-          onClick={this.handleScrollToTop}
-          className="SubNav--link-name"
-        >
+        <Link to="resume" className="NavBar--large" onClick={handleScrollToTop}>
           Resume
         </Link>
       </div>
-    );
-  };
-
-  render() {
-    const icon = this.state.showSubNav ? faTimes : faBars;
-    return (
-      <nav
-        className={classnames("NavBar", {
-          "NavBar--hidden": !this.state.visible,
-        })}
-      >
-        <div className="NavBar__container">
-          <button className="NavBar--hamburger" onClick={this.toggleNav}>
-            <FontAwesomeIcon icon={icon} />
-          </button>
-          <Link
-            className="NavBar--marquee"
-            to="/"
-            onClick={this.handleScrollToTop}
-          >
-            Sterling | Dev
-          </Link>
-          <HashLink
-            className="NavBar--large"
-            to="/#about"
-            onClick={this.handleLinkClick}
-          >
-            About
-          </HashLink>
-          <HashLink
-            className="NavBar--large"
-            to="/#projects"
-            onClick={this.handleLinkClick}
-          >
-            Projects
-          </HashLink>
-          <HashLink
-            className="NavBar--large"
-            to="/#connect"
-            onClick={this.handleLinkClick}
-          >
-            Connect
-          </HashLink>
-          <Link
-            to="resume"
-            className="NavBar--large"
-            onClick={this.handleScrollToTop}
-          >
-            Resume
-          </Link>
-        </div>
-        {this.renderSubNav()}
-      </nav>
-    );
-  }
+      <SubNav
+        showSubNav={showSubNav}
+        linkClick={handleLinkClick}
+        scrollToTop={handleScrollToTop}
+      />
+    </nav>
+  );
 }
 
 export default NavBar;
