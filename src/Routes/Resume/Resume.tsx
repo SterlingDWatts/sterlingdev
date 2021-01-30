@@ -2,7 +2,7 @@ import React from "react";
 import { Helmet } from "react-helmet";
 import "./Resume.css";
 
-function Resume() {
+const Resume = () => {
   return (
     <div className="Resume">
       <Helmet>
@@ -22,29 +22,17 @@ function Resume() {
             <b>(858) 609-9463</b>
           </p>
           <p>
-            <a
-              href="mailto:SterlingDWatts@gmail.com"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
+            <a href="mailto:SterlingDWatts@gmail.com" rel="noopener noreferrer" target="_blank">
               SterlingDWatts@gmail.com
             </a>
           </p>
           <p>
-            <a
-              href="https://www.linkedin.com/in/sterlingdwatts/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
+            <a href="https://www.linkedin.com/in/sterlingdwatts/" rel="noopener noreferrer" target="_blank">
               in/SterlingDWatts
             </a>
           </p>
           <p>
-            <a
-              href="https://github.com/SterlingDWatts"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
+            <a href="https://github.com/SterlingDWatts" rel="noopener noreferrer" target="_blank">
               github.com/SterlingDWatts
             </a>
           </p>
@@ -55,17 +43,15 @@ function Resume() {
           <section className="Resume--summary">
             <h2>SUMMARY</h2>
             <p>
-              An enthusiastic Full Stack Developer that enjoys making beautiful
-              and intuitive sites as well as analyzing the data that can come
-              from them.
+              An enthusiastic Full Stack Developer that enjoys making beautiful and intuitive sites as well as analyzing
+              the data that can come from them.
             </p>
           </section>
           <section className="Resume--skills">
             <h2>SKILLS</h2>
             <div className="Resume--skill">
               <p>
-                <b>Front-End:</b> HTML5, CSS3, JavaScript ES6, React, Express,
-                jQuery
+                <b>Front-End:</b> HTML5, CSS3, JavaScript ES6, React, Express, jQuery
               </p>
             </div>
             <div className="Resume--skill">
@@ -80,8 +66,7 @@ function Resume() {
             </div>
             <div className="Resume--skill">
               <p>
-                <b>Additional:</b> Mocha, Chai, Enzyme, Heroku, NPM, Python,
-                Pandas, NumPy, Seaborn, Matplotlib
+                <b>Additional:</b> Mocha, Chai, Enzyme, Heroku, NPM, Python, Pandas, NumPy, Seaborn, Matplotlib
               </p>
             </div>
           </section>
@@ -112,40 +97,22 @@ function Resume() {
                 Quaff Quizz <span>- Wine education web app</span>
               </h3>
               <p>
-                <a
-                  href="https://quaff.now.sh/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://quaff.now.sh/" target="_blank" rel="noopener noreferrer">
                   LIVE SITE
                 </a>{" "}
                 |{" "}
-                <a
-                  href="https://github.com/SterlingDWatts/quaff"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://github.com/SterlingDWatts/quaff" target="_blank" rel="noopener noreferrer">
                   CLIENT REPO
                 </a>{" "}
                 |{" "}
-                <a
-                  href="https://github.com/SterlingDWatts/quaff-server"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://github.com/SterlingDWatts/quaff-server" target="_blank" rel="noopener noreferrer">
                   SERVER REPO
                 </a>{" "}
                 | HTML5, CSS3, JavaScript, React, Nodejs, PostgreSQL, Heroku
               </p>
               <ul>
-                <li>
-                  Randomized questions and answers to ensure users learn content
-                  instead of memorizing patterns
-                </li>
-                <li>
-                  Created topics so that material could be selected by topic
-                  instead of studying all the content
-                </li>
+                <li>Randomized questions and answers to ensure users learn content instead of memorizing patterns</li>
+                <li>Created topics so that material could be selected by topic instead of studying all the content</li>
               </ul>
             </div>
             <div className="Resume--project">
@@ -153,19 +120,11 @@ function Resume() {
                 Sterling | Blog <span>- Create | Edit | Share</span>
               </h3>
               <p>
-                <a
-                  href="https://sterlingblog.now.sh/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://sterlingblog.now.sh/" target="_blank" rel="noopener noreferrer">
                   LIVE SITE
                 </a>{" "}
                 |{" "}
-                <a
-                  href="https://github.com/SterlingDWatts/sterling-blog"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://github.com/SterlingDWatts/sterling-blog" target="_blank" rel="noopener noreferrer">
                   CLIENT REPO
                 </a>{" "}
                 |{" "}
@@ -176,18 +135,13 @@ function Resume() {
                 >
                   SERVER REPO
                 </a>{" "}
-                | HTML5, CSS3, JavaScript, React, Nodejs, PostgreSQL, Heroku,
-                Froala WYSIWYG Editor, AWS
+                | HTML5, CSS3, JavaScript, React, Nodejs, PostgreSQL, Heroku, Froala WYSIWYG Editor, AWS
               </p>
               <ul>
+                <li>Implemented a “what you see is what you get” editor to make styling blog easy and intuitive</li>
                 <li>
-                  Implemented a “what you see is what you get” editor to make
-                  styling blog easy and intuitive
-                </li>
-                <li>
-                  Created multiple endpoints to manage different tasks such as
-                  surfacing blogs, user authentication, and returning secure AWS
-                  credentials
+                  Created multiple endpoints to manage different tasks such as surfacing blogs, user authentication, and
+                  returning secure AWS credentials
                 </li>
               </ul>
             </div>
@@ -196,32 +150,18 @@ function Resume() {
                 Game Hub <span>- Explore board games</span>
               </h3>
               <p>
-                <a
-                  href="https://sterlingdwatts.github.io/game_hub/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://sterlingdwatts.github.io/game_hub/" target="_blank" rel="noopener noreferrer">
                   LIVE SITE
                 </a>{" "}
                 |{" "}
-                <a
-                  href="https://github.com/SterlingDWatts/game_hub"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
+                <a href="https://github.com/SterlingDWatts/game_hub" target="_blank" rel="noopener noreferrer">
                   REPO
                 </a>{" "}
                 | HTML5, CSS3, JavaScript, jQuery, XML, Board Game Geek API
               </p>
               <ul>
-                <li>
-                  Created algorithm to remove duplicates from API result and
-                  sort by popularity
-                </li>
-                <li>
-                  Used multiple API endpoints to make game pages more robust
-                  with links to related games
-                </li>
+                <li>Created algorithm to remove duplicates from API result and sort by popularity</li>
+                <li>Used multiple API endpoints to make game pages more robust with links to related games</li>
               </ul>
             </div>
           </section>
@@ -251,6 +191,6 @@ function Resume() {
       </div>
     </div>
   );
-}
+};
 
 export default Resume;

@@ -2,16 +2,10 @@ import React from "react";
 import Section from "../Section/Section";
 import Project from "../Project/Project";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faReact,
-  faCss3Alt,
-  faHtml5,
-  faJsSquare,
-  faNodeJs,
-} from "@fortawesome/free-brands-svg-icons";
+import { faReact, faCss3Alt, faHtml5, faJsSquare, faNodeJs } from "@fortawesome/free-brands-svg-icons";
 import "./Projects.css";
 
-function Projects() {
+const Projects = () => {
   return (
     <Section className="Projects">
       <div id="projects"> </div>
@@ -29,37 +23,16 @@ function Projects() {
         >
           <p>Learn and Study Wine!</p>
           <p>
-            Learn wine through short digestible modules followed by tests. Get a
-            high enough score and unlock the next module! As modules are
-            unlocked the questions are added into the study section filtered by
-            topic to make it easy to cement the knowledge.
+            Learn wine through short digestible modules followed by tests. Get a high enough score and unlock the next
+            module! As modules are unlocked the questions are added into the study section filtered by topic to make it
+            easy to cement the knowledge.
           </p>
           <div className="Project__icons">
-            <FontAwesomeIcon
-              className="Project--tech-icon"
-              icon={faReact}
-              title="React"
-            />{" "}
-            <FontAwesomeIcon
-              className="Project--tech-icon"
-              icon={faHtml5}
-              title="HTML5"
-            />{" "}
-            <FontAwesomeIcon
-              className="Project--tech-icon"
-              icon={faCss3Alt}
-              title="CSS3"
-            />{" "}
-            <FontAwesomeIcon
-              className="Project--tech-icon"
-              icon={faJsSquare}
-              title="JavaScript"
-            />
-            <FontAwesomeIcon
-              className="Project--tech-icon"
-              icon={faNodeJs}
-              title="Node"
-            />
+            <FontAwesomeIcon className="Project--tech-icon" icon={faReact} title="React" />{" "}
+            <FontAwesomeIcon className="Project--tech-icon" icon={faHtml5} title="HTML5" />{" "}
+            <FontAwesomeIcon className="Project--tech-icon" icon={faCss3Alt} title="CSS3" />{" "}
+            <FontAwesomeIcon className="Project--tech-icon" icon={faJsSquare} title="JavaScript" />
+            <FontAwesomeIcon className="Project--tech-icon" icon={faNodeJs} title="Node" />
           </div>
         </Project>
         <Project
@@ -72,36 +45,15 @@ function Projects() {
         >
           <p>Create | Edit | Share</p>
           <p>
-            A blog content management system. Scroll through and read existing
-            blogs. Create new blogs as well as edit your existing blogs using an
-            intuitive "what you see is what you get" editor.
+            A blog content management system. Scroll through and read existing blogs. Create new blogs as well as edit
+            your existing blogs using an intuitive "what you see is what you get" editor.
           </p>
           <div className="Project__icons">
-            <FontAwesomeIcon
-              className="Project--tech-icon"
-              icon={faReact}
-              title="React"
-            />{" "}
-            <FontAwesomeIcon
-              className="Project--tech-icon"
-              icon={faHtml5}
-              title="HTML5"
-            />{" "}
-            <FontAwesomeIcon
-              className="Project--tech-icon"
-              icon={faCss3Alt}
-              title="CSS3"
-            />{" "}
-            <FontAwesomeIcon
-              className="Project--tech-icon"
-              icon={faJsSquare}
-              title="JavaScript"
-            />
-            <FontAwesomeIcon
-              className="Project--tech-icon"
-              icon={faNodeJs}
-              title="Node"
-            />
+            <FontAwesomeIcon className="Project--tech-icon" icon={faReact} title="React" />{" "}
+            <FontAwesomeIcon className="Project--tech-icon" icon={faHtml5} title="HTML5" />{" "}
+            <FontAwesomeIcon className="Project--tech-icon" icon={faCss3Alt} title="CSS3" />{" "}
+            <FontAwesomeIcon className="Project--tech-icon" icon={faJsSquare} title="JavaScript" />
+            <FontAwesomeIcon className="Project--tech-icon" icon={faNodeJs} title="Node" />
           </div>
         </Project>
         <Project
@@ -113,34 +65,20 @@ function Projects() {
         >
           <p>The hottest new way to discover new board games!</p>
           <p>
-            Game Hub allows users to search for a specific board game or select
-            from an always updating list of the hottest trending games! Game Hub
-            has detailed information about each game and has links for families
-            the game belongs to so you can find similar games. On each game's
-            info page, there are also links to any expansions that exist for the
-            game, so that if you love the game you can keep the fun going!
+            Game Hub allows users to search for a specific board game or select from an always updating list of the
+            hottest trending games! Game Hub has detailed information about each game and has links for families the
+            game belongs to so you can find similar games. On each game's info page, there are also links to any
+            expansions that exist for the game, so that if you love the game you can keep the fun going!
           </p>
           <div className="Project__icons">
-            <FontAwesomeIcon
-              className="Project--tech-icon"
-              icon={faHtml5}
-              title="HTML5"
-            />{" "}
-            <FontAwesomeIcon
-              className="Project--tech-icon"
-              icon={faCss3Alt}
-              title="CSS3"
-            />{" "}
-            <FontAwesomeIcon
-              className="Project--tech-icon"
-              icon={faJsSquare}
-              title="JavaScript"
-            />
+            <FontAwesomeIcon className="Project--tech-icon" icon={faHtml5} title="HTML5" />{" "}
+            <FontAwesomeIcon className="Project--tech-icon" icon={faCss3Alt} title="CSS3" />{" "}
+            <FontAwesomeIcon className="Project--tech-icon" icon={faJsSquare} title="JavaScript" />
           </div>
         </Project>
       </div>
     </Section>
   );
-}
+};
 
 export default Projects;

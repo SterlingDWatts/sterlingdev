@@ -11,15 +11,7 @@ type AppProps = {
   serverRepoLink?: string;
 };
 
-function Project({
-  picture,
-  alt,
-  name,
-  siteLink,
-  clientLink,
-  children,
-  serverRepoLink,
-}: AppProps) {
+const Project = ({ picture, alt, name, siteLink, clientLink, children, serverRepoLink }: AppProps) => {
   return (
     <div className="Project">
       <img src={picture} alt={alt} />
@@ -36,11 +28,7 @@ function Project({
           {serverRepoLink && (
             <>
               {" ∙ "}
-              <a
-                href={serverRepoLink}
-                rel="noopener noreferrer"
-                target="_blank"
-              >
+              <a href={serverRepoLink} rel="noopener noreferrer" target="_blank">
                 Server Repo
               </a>
             </>
@@ -50,6 +38,6 @@ function Project({
       </div>
     </div>
   );
-}
+};
 
 export default Project;

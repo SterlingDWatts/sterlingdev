@@ -6,7 +6,7 @@ import Projects from "../../Components/Projects/Projects";
 import Connect from "../../Components/Connect/Connect";
 import "./Landing.css";
 
-function Landing() {
+const Landing = () => {
   useEffect(() => {
     const { hash } = window.location;
     if (hash !== "") {
@@ -28,6 +28,6 @@ function Landing() {
       <Connect />
     </div>
   );
-}
+};
 
 export default Landing;

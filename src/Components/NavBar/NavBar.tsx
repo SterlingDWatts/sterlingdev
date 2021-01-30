@@ -6,7 +6,7 @@ import classnames from "classnames";
 import SubNav from "../SubNav/SubNav";
 import "./NavBar.css";
 
-function NavBar() {
+const NavBar = () => {
   const [state, setState] = useState({
     prevScrollPos: window.pageYOffset,
     visible: true,
@@ -74,38 +74,22 @@ function NavBar() {
         <Link className="NavBar--marquee" to="/" onClick={handleScrollToTop}>
           Sterling | Dev
         </Link>
-        <Link
-          className="NavBar--large"
-          to={{ pathname: "/", hash: "#about" }}
-          onClick={handleLinkClick}
-        >
+        <Link className="NavBar--large" to={{ pathname: "/", hash: "#about" }} onClick={handleLinkClick}>
           About
         </Link>
-        <Link
-          className="NavBar--large"
-          to={{ pathname: "/", hash: "#projects" }}
-          onClick={handleLinkClick}
-        >
+        <Link className="NavBar--large" to={{ pathname: "/", hash: "#projects" }} onClick={handleLinkClick}>
           Projects
         </Link>
-        <Link
-          className="NavBar--large"
-          to={{ pathname: "/", hash: "#connect" }}
-          onClick={handleLinkClick}
-        >
+        <Link className="NavBar--large" to={{ pathname: "/", hash: "#connect" }} onClick={handleLinkClick}>
           Connect
         </Link>
         <Link to="resume" className="NavBar--large" onClick={handleScrollToTop}>
           Resume
         </Link>
       </div>
-      <SubNav
-        showSubNav={showSubNav}
-        linkClick={handleLinkClick}
-        scrollToTop={handleScrollToTop}
-      />
+      <SubNav showSubNav={showSubNav} linkClick={handleLinkClick} scrollToTop={handleScrollToTop} />
     </nav>
   );
-}
+};
 
 export default NavBar;

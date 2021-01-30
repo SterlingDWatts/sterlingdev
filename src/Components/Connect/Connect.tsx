@@ -2,7 +2,7 @@ import React from "react";
 import Section from "../Section/Section";
 import "./Connect.css";
 
-function Connect() {
+const Connect = () => {
   return (
     <Section className="Connect">
       <div className="Connect--picture-container">
@@ -18,31 +18,19 @@ function Connect() {
           <span>858.609.9463</span>
           <span>Email</span>
           <span>
-            <a
-              href="mailto:SterlingDWatts@gmail.com"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
+            <a href="mailto:SterlingDWatts@gmail.com" rel="noopener noreferrer" target="_blank">
               SterlingDWatts@gmail.com
             </a>
           </span>
           <span>Github</span>
           <span>
-            <a
-              href="https://github.com/SterlingDWatts"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
+            <a href="https://github.com/SterlingDWatts" rel="noopener noreferrer" target="_blank">
               /SterlingDWatts
             </a>
           </span>
           <span>Linkedin</span>
           <span>
-            <a
-              href="https://www.linkedin.com/in/sterlingdwatts/"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
+            <a href="https://www.linkedin.com/in/sterlingdwatts/" rel="noopener noreferrer" target="_blank">
               /sterlingdwatts
             </a>
           </span>
@@ -50,6 +38,6 @@ function Connect() {
       </div>
     </Section>
   );
-}
+};
 
 export default Connect;
