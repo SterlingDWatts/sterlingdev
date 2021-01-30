@@ -4,9 +4,9 @@
   grid-template-rows: 1fr 1fr 1fr 1fr;
   row-gap: 16px;
   column-gap: 16px;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1;
-  padding: 0 16px 32px 16px;
+  padding: 8px 16px 32px 16px;
   position: absolute;
   top: 60px;
   z-index: 0;
@@ -26,12 +26,6 @@
 
 .SubNav--link-name {
   text-align: left;
-}
-
-@media screen and (min-width: 400px) {
-  .SubNav {
-    font-size: 24px;
-  }
 }
 
 @media screen and (min-width: 750px) {
