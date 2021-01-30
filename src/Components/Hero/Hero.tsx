@@ -2,7 +2,7 @@ import React from "react";
 import Section from "../Section/Section";
 import "./Hero.css";
 
-function Hero() {
+const Hero = () => {
   return (
     <Section className="Hero">
       <div id="sterling"> </div>
@@ -21,14 +21,13 @@ function Hero() {
         </div>
         <div className="Hero--blurb">
           <p>
-            I am a passionate Full Stack Web Developer that enjoys making
-            beautiful and intuitive websites as well as analyzing the data that
-            I can get from them!
+            I am a passionate Full Stack Web Developer that enjoys making beautiful and intuitive websites as well as
+            analyzing the data that I can get from them!
           </p>
         </div>
       </div>
     </Section>
   );
-}
+};
 
 export default Hero;
