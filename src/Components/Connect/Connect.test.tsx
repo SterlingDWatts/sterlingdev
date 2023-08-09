@@ -4,7 +4,7 @@ import renderer from "react-test-renderer";
 import { BrowserRouter } from "react-router-dom";
 import Connect from "./Connect";
 
-describe("Connect Component", () => {
+describe("<Connect />", () => {
   it("renders without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(

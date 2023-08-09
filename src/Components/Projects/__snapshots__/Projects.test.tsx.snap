@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Projects Component render the UI as expected 1`] = `
+exports[`<Projects /> render the UI as expected 1`] = `
 <Router
   history={
     Object {

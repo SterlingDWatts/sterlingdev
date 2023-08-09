@@ -1,7 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUserTie, faBrowser, faAddressCard, faFileUser } from "@fortawesome/pro-light-svg-icons";
+import LightAddressCard from "../../svgs/light/LightAddressCard";
+import LightBrowser from "../../svgs/light/LightBrowser";
+import LightFileUser from "../../svgs/light/LightFileUser";
+import LightUserTie from "../../svgs/light/LightUserTie";
 import classnames from "classnames";
 import "./SubNav.css";
 
@@ -18,30 +20,32 @@ const SubNav = ({ showSubNav, linkClick, scrollToTop }: AppProps) => {
         "SubNav--hidden": !showSubNav,
       })}
     >
-      <Link to={{ pathname: "/", hash: "#about" }} onClick={linkClick}>
-        <FontAwesomeIcon icon={faUserTie} />
-      </Link>
-      <Link to={{ pathname: "/", hash: "#about" }} onClick={linkClick} className="SubNav--link-name">
-        About
-      </Link>
-      <Link to={{ pathname: "/", hash: "#projects" }} onClick={linkClick}>
-        <FontAwesomeIcon icon={faBrowser} />
-      </Link>
-      <Link to={{ pathname: "/", hash: "#projects" }} onClick={linkClick} className="SubNav--link-name">
-        Projects
-      </Link>
-      <Link to={{ pathname: "/", hash: "#connect" }} onClick={linkClick}>
-        <FontAwesomeIcon icon={faAddressCard} />
-      </Link>
-      <Link to={{ pathname: "/", hash: "#connect" }} onClick={linkClick} className="SubNav--link-name">
-        Connect
-      </Link>
-      <Link to="resume" onClick={linkClick}>
-        <FontAwesomeIcon icon={faFileUser} />
-      </Link>
-      <Link to="resume" onClick={scrollToTop} className="SubNav--link-name">
-        Resume
-      </Link>
+      <div className="SubNav__container">
+        <Link to={{ pathname: "/home", hash: "#about" }} onClick={linkClick}>
+          <LightUserTie height="15px" fill="#fcd734" />
+        </Link>
+        <Link to={{ pathname: "/home", hash: "#about" }} onClick={linkClick} className="SubNav--link-name">
+          About
+        </Link>
+        <Link to={{ pathname: "/home", hash: "#projects" }} onClick={linkClick}>
+          <LightBrowser height="15px" fill="#fcd734" />
+        </Link>
+        <Link to={{ pathname: "/home", hash: "#projects" }} onClick={linkClick} className="SubNav--link-name">
+          Projects
+        </Link>
+        <Link to={{ pathname: "/home", hash: "#connect" }} onClick={linkClick}>
+          <LightAddressCard height="15px" fill="#fcd734" />
+        </Link>
+        <Link to={{ pathname: "/home", hash: "#connect" }} onClick={linkClick} className="SubNav--link-name">
+          Connect
+        </Link>
+        <Link to="resume" onClick={linkClick}>
+          <LightFileUser height="15px" fill="#fcd734" />
+        </Link>
+        <Link to="resume" onClick={scrollToTop} className="SubNav--link-name">
+          Resume
+        </Link>
+      </div>
     </div>
   );
 };

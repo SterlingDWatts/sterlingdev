@@ -4,7 +4,7 @@ import renderer from "react-test-renderer";
 import { BrowserRouter } from "react-router-dom";
 import Section from "./Section";
 
-describe("Section Component", () => {
+describe("<Section />", () => {
   it("renders without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(

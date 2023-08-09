@@ -1,6 +1,9 @@
 import React from "react";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faGithub, faLinkedinIn, faFacebookF, faInstagram, faTwitter } from "@fortawesome/free-brands-svg-icons";
+import BrandsFacebookF from "../../svgs/brands/BrandsFacebookF";
+import BrandsGithub from "../../svgs/brands/BrandsGithub";
+import BrandsInstagram from "../../svgs/brands/BrandsInstagram";
+import BrandsLinkedinIn from "../../svgs/brands/BrandsLinkedinIn";
+import BrandsX from "../../svgs/brands/BrandsX";
 import "./Footer.css";
 
 const Footer = () => {
@@ -8,19 +11,19 @@ const Footer = () => {
     <div className="Footer">
       <div className="Footer__container">
         <a href="https://github.com/SterlingDWatts" rel="noopener noreferrer" target="_blank">
-          <FontAwesomeIcon icon={faGithub} title="Github" />
+          <BrandsGithub height="20px" fill="#fcd734" />
         </a>
         <a href="https://www.linkedin.com/in/sterlingdwatts/" rel="noopener noreferrer" target="_blank">
-          <FontAwesomeIcon icon={faLinkedinIn} title="Linkedin" />
+          <BrandsLinkedinIn height="20px" fill="#fcd734" />
         </a>
         <a href="https://www.facebook.com/SterlingDWatts" rel="noopener noreferrer" target="_blank">
-          <FontAwesomeIcon icon={faFacebookF} title="Facebook" />
+          <BrandsFacebookF height="20px" fill="#fcd734" />
         </a>
         <a href="https://www.instagram.com/sterlingdwatts/" rel="noopener noreferrer" target="_blank">
-          <FontAwesomeIcon icon={faInstagram} title="Instagram" />
+          <BrandsInstagram height="20px" fill="#fcd734" />
         </a>
         <a href="https://twitter.com/SterlingDWatts" rel="noopener noreferrer" target="_blank">
-          <FontAwesomeIcon icon={faTwitter} title="Twitter" />
+          <BrandsX height="20px" fill="#fcd734" />
         </a>
       </div>
     </div>

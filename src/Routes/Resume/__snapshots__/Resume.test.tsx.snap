@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Resume Component renders the UI as expected 1`] = `
+exports[`<Resume /> renders the UI as expected 1`] = `
 <div
   className="Resume"
 >
@@ -15,7 +15,7 @@ exports[`Resume Component renders the UI as expected 1`] = `
           Sterling Watts
         </h1>
         <span>
-          Full Stack Web Developer
+          Software Developer
         </span>
       </header>
     </section>
@@ -75,7 +75,7 @@ exports[`Resume Component renders the UI as expected 1`] = `
           SUMMARY
         </h2>
         <p>
-          An enthusiastic Full Stack Developer that enjoys making beautiful and intuitive sites as well as analyzing the data that can come from them.
+          An enthusiastic Software Developer that enjoys making beautiful and intuitive sites as well as analyzing the data that can come from them.
         </p>
       </section>
       <section

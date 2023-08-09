@@ -1,11 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { shallow } from "enzyme";
-import toJson from "enzyme-to-json";
+import renderer from "react-test-renderer";
 import { BrowserRouter } from "react-router-dom";
 import Footer from "./Footer";
 
-describe("Footer Component", () => {
+describe("<Footer />", () => {
   it("renders without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(
@@ -18,11 +17,13 @@ describe("Footer Component", () => {
   });
 
   it("renders the UI as expected", () => {
-    const wrapper = shallow(
-      <BrowserRouter>
-        <Footer />
-      </BrowserRouter>
-    );
-    expect(toJson(wrapper)).toMatchSnapshot();
+    const tree = renderer
+      .create(
+        <BrowserRouter>
+          <Footer />
+        </BrowserRouter>
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });

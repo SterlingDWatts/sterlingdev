@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Hero Component renders the UI as expected 1`] = `
+exports[`<Hero /> renders the UI as expected 1`] = `
 <section
   className="Hero Section"
 >
@@ -24,7 +24,7 @@ exports[`Hero Component renders the UI as expected 1`] = `
           Watts
         </h1>
         <span>
-          Full Stack Web Developer
+          Software Developer
         </span>
       </header>
     </div>
@@ -39,7 +39,7 @@ exports[`Hero Component renders the UI as expected 1`] = `
       className="Hero--blurb"
     >
       <p>
-        I am a passionate Full Stack Web Developer that enjoys making beautiful and intuitive websites as well as analyzing the data that I can get from them!
+        I am a passionate Software Developer that enjoys making beautiful and intuitive websites as well as analyzing the data that I can get from them!
       </p>
     </div>
   </div>

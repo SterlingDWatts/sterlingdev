@@ -11,8 +11,7 @@
   transition-timing-function: linear;
   left: 0;
   right: 0;
-  box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.15),
-    0 1px 4px 1px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.15), 0 1px 4px 1px rgba(0, 0, 0, 0.15);
   height: 60px;
   z-index: 1;
 }
@@ -32,7 +31,7 @@
   justify-content: flex-start;
   align-items: center;
   z-index: 1;
-  position: absolute;
+  position: relative;
   height: 60px;
 }
 

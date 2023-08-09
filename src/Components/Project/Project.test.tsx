@@ -4,7 +4,7 @@ import renderer from "react-test-renderer";
 import { BrowserRouter } from "react-router-dom";
 import Project from "./Project";
 
-describe("Project Component", () => {
+describe("<Project />", () => {
   it("renders without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(
@@ -15,7 +15,9 @@ describe("Project Component", () => {
           name="project"
           siteLink="https://www.site.com"
           clientLink="https://www.site.com"
-        />
+        >
+          <div></div>
+        </Project>
       </BrowserRouter>,
       div
     );
@@ -32,7 +34,9 @@ describe("Project Component", () => {
             name="project"
             siteLink="https://www.site.com"
             clientLink="https://www.site.com"
-          />
+          >
+            <div></div>
+          </Project>
         </BrowserRouter>
       )
       .toJSON();

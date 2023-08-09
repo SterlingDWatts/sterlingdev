@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Project Component renders the UI as expected 1`] = `
+exports[`<Project /> renders the UI as expected 1`] = `
 <div
   className="Project"
 >
@@ -35,6 +35,7 @@ exports[`Project Component renders the UI as expected 1`] = `
         Client Repo
       </a>
     </div>
+    <div />
   </div>
 </div>
 `;

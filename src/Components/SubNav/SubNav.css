@@ -1,4 +1,16 @@
 .SubNav {
+  z-index: 0;
+  background-color: hsl(169, 100%, 12%);
+  width: 100%;
+  height: 151px;
+  transition-property: height;
+  transition-duration: 0.25s;
+  transition-timing-function: linear;
+  box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.15), 0 1px 4px 1px rgba(0, 0, 0, 0.15);
+  position: relative;
+}
+
+.SubNav__container {
   display: grid;
   grid-template-columns: 27px auto;
   grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -8,20 +20,11 @@
   line-height: 1;
   padding: 8px 16px 32px 16px;
   position: absolute;
-  top: 60px;
-  z-index: 0;
-  background-color: #003d32;
-  width: 100%;
-  transition-property: top;
-  transition-duration: 0.25s;
-  transition-timing-function: linear;
-  box-shadow: 0 1px 10px 3px rgba(0, 0, 0, 0.15),
-    0 1px 4px 1px rgba(0, 0, 0, 0.15);
+  bottom: 0;
 }
 
 .SubNav--hidden {
-  top: -160px;
-  box-shadow: none;
+  height: 1px;
 }
 
 .SubNav--link-name {

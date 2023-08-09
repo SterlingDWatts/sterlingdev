@@ -4,12 +4,12 @@ import renderer from "react-test-renderer";
 import { BrowserRouter } from "react-router-dom";
 import SubNav from "./SubNav";
 
-describe("SubNav Component", () => {
+describe("<SubNav />", () => {
   it("renders without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(
       <BrowserRouter>
-        <SubNav />
+        <SubNav showSubNav={true} linkClick={() => {}} scrollToTop={() => {}} />
       </BrowserRouter>,
       div
     );
@@ -20,7 +20,7 @@ describe("SubNav Component", () => {
     const tree = renderer
       .create(
         <BrowserRouter>
-          <SubNav />
+          <SubNav showSubNav={true} linkClick={() => {}} scrollToTop={() => {}} />
         </BrowserRouter>
       )
       .toJSON();

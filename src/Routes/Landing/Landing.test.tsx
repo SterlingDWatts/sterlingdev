@@ -1,11 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { shallow } from "enzyme";
-import toJson from "enzyme-to-json";
+import renderer from "react-test-renderer";
 import { BrowserRouter } from "react-router-dom";
 import Landing from "./Landing";
 
-describe("Landing Component", () => {
+describe("<Landing />", () => {
   it("renders without crashing", () => {
     const div = document.createElement("div");
     ReactDOM.render(
@@ -18,11 +17,13 @@ describe("Landing Component", () => {
   });
 
   it("renders the UI as expected", () => {
-    const wrapper = shallow(
-      <BrowserRouter>
-        <Landing />
-      </BrowserRouter>
-    );
-    expect(toJson(wrapper)).toMatchSnapshot();
+    const tree = renderer
+      .create(
+        <BrowserRouter>
+          <Landing />
+        </BrowserRouter>
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });

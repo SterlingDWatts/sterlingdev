@@ -13,7 +13,7 @@ const Hero = () => {
               Sterling <br className="Hero--large" />
               Watts
             </h1>
-            <span>Full Stack Web Developer</span>
+            <span>Software Developer</span>
           </header>
         </div>
         <div className="Hero__image_container">
@@ -21,7 +21,7 @@ const Hero = () => {
         </div>
         <div className="Hero--blurb">
           <p>
-            I am a passionate Full Stack Web Developer that enjoys making beautiful and intuitive websites as well as
+            I am a passionate Software Developer that enjoys making beautiful and intuitive websites as well as
             analyzing the data that I can get from them!
           </p>
         </div>

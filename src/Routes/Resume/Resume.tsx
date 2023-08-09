@@ -12,7 +12,7 @@ const Resume = () => {
         <section className="Resume--hero">
           <header>
             <h1>Sterling Watts</h1>
-            <span>Full Stack Web Developer</span>
+            <span>Software Developer</span>
           </header>
         </section>
         <section className="Resume--contact">
@@ -43,7 +43,7 @@ const Resume = () => {
           <section className="Resume--summary">
             <h2>SUMMARY</h2>
             <p>
-              An enthusiastic Full Stack Developer that enjoys making beautiful and intuitive sites as well as analyzing
+              An enthusiastic Software Developer that enjoys making beautiful and intuitive sites as well as analyzing
               the data that can come from them.
             </p>
           </section>

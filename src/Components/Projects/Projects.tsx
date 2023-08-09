@@ -1,8 +1,12 @@
 import React from "react";
 import Section from "../Section/Section";
 import Project from "../Project/Project";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faReact, faCss3Alt, faHtml5, faJsSquare, faNodeJs } from "@fortawesome/free-brands-svg-icons";
+import BrandsCssThreeAlt from "../../svgs/brands/BrandsCssThreeAlt";
+import BrandsHtmlFive from "../../svgs/brands/BrandsHtmlFive";
+import BrandsJsSquare from "../../svgs/brands/BrandsJsSquare";
+import BrandsNodeJs from "../../svgs/brands/BrandsNodeJs";
+import BrandsPostreSql from "../../svgs/brands/BrandsPostreSql";
+import BrandsReact from "../../svgs/brands/BrandsReact";
 import "./Projects.css";
 
 const Projects = () => {
@@ -28,11 +32,12 @@ const Projects = () => {
             easy to cement the knowledge.
           </p>
           <div className="Project__icons">
-            <FontAwesomeIcon className="Project--tech-icon" icon={faReact} title="React" />{" "}
-            <FontAwesomeIcon className="Project--tech-icon" icon={faHtml5} title="HTML5" />{" "}
-            <FontAwesomeIcon className="Project--tech-icon" icon={faCss3Alt} title="CSS3" />{" "}
-            <FontAwesomeIcon className="Project--tech-icon" icon={faJsSquare} title="JavaScript" />
-            <FontAwesomeIcon className="Project--tech-icon" icon={faNodeJs} title="Node" />
+            <BrandsJsSquare fill="#00685b" height="32px" />
+            <BrandsReact fill="#00685b" height="32px" />
+            <BrandsHtmlFive fill="#00685b" height="32px" />
+            <BrandsCssThreeAlt fill="#00685b" height="32px" />
+            <BrandsNodeJs fill="#00685b" height="32px" />
+            <BrandsPostreSql fill="#00685b" height="32px" backgroundColor="#ffff6b" />
           </div>
         </Project>
         <Project
@@ -49,11 +54,12 @@ const Projects = () => {
             your existing blogs using an intuitive "what you see is what you get" editor.
           </p>
           <div className="Project__icons">
-            <FontAwesomeIcon className="Project--tech-icon" icon={faReact} title="React" />{" "}
-            <FontAwesomeIcon className="Project--tech-icon" icon={faHtml5} title="HTML5" />{" "}
-            <FontAwesomeIcon className="Project--tech-icon" icon={faCss3Alt} title="CSS3" />{" "}
-            <FontAwesomeIcon className="Project--tech-icon" icon={faJsSquare} title="JavaScript" />
-            <FontAwesomeIcon className="Project--tech-icon" icon={faNodeJs} title="Node" />
+            <BrandsJsSquare fill="#00685b" height="32px" />
+            <BrandsReact fill="#00685b" height="32px" />
+            <BrandsHtmlFive fill="#00685b" height="32px" />
+            <BrandsCssThreeAlt fill="#00685b" height="32px" />
+            <BrandsNodeJs fill="#00685b" height="32px" />
+            <BrandsPostreSql fill="#00685b" height="32px" backgroundColor="#ffff6b" />
           </div>
         </Project>
         <Project
@@ -71,9 +77,9 @@ const Projects = () => {
             expansions that exist for the game, so that if you love the game you can keep the fun going!
           </p>
           <div className="Project__icons">
-            <FontAwesomeIcon className="Project--tech-icon" icon={faHtml5} title="HTML5" />{" "}
-            <FontAwesomeIcon className="Project--tech-icon" icon={faCss3Alt} title="CSS3" />{" "}
-            <FontAwesomeIcon className="Project--tech-icon" icon={faJsSquare} title="JavaScript" />
+            <BrandsJsSquare fill="#00685b" height="32px" />
+            <BrandsHtmlFive fill="#00685b" height="32px" />
+            <BrandsCssThreeAlt fill="#00685b" height="32px" />
           </div>
         </Project>
       </div>

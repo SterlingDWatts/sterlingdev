@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Connect Component renders the UI as expected 1`] = `
+exports[`<Connect /> renders the UI as expected 1`] = `
 <section
   className="Connect Section"
 >

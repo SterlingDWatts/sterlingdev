@@ -1,31 +1,26 @@
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars, faTimes } from "@fortawesome/pro-light-svg-icons";
 import classnames from "classnames";
 import SubNav from "../SubNav/SubNav";
+import LightBars from "../../svgs/light/LightBars";
+import LightXMark from "../../svgs/light/LightXMark";
 import "./NavBar.css";
 
 const NavBar = () => {
-  const [state, setState] = useState({
-    prevScrollPos: window.pageYOffset,
-    visible: true,
-    linkClicked: false,
-    showSubNav: false,
-  });
+  const [prevScrollPos, setPrevScrollPos] = useState(window.scrollY);
+  const [visible, setVisible] = useState(true);
+  const [linkClicked, setLinkClicked] = useState(false);
+  const [showSubNav, setShowSubNav] = useState(false);
 
   useEffect(() => {
     function handleScroll() {
-      const { prevScrollPos, linkClicked } = state;
-      const currentScrollPos = window.pageYOffset;
+      const currentScrollPos = window.scrollY;
       const visible = prevScrollPos > currentScrollPos;
 
-      setState({
-        prevScrollPos: currentScrollPos,
-        visible: linkClicked ? true : visible,
-        linkClicked: false,
-        showSubNav: false,
-      });
+      setPrevScrollPos(currentScrollPos);
+      setVisible(linkClicked ? true : visible);
+      setLinkClicked(false);
+      setShowSubNav(false);
     }
 
     window.addEventListener("scroll", handleScroll);
@@ -33,54 +28,44 @@ const NavBar = () => {
     return function cleanup() {
       window.removeEventListener("scroll", handleScroll);
     };
-  });
+  }, [linkClicked, prevScrollPos]);
 
   function handleScrollToTop() {
     window.scrollTo(0, 0);
-    setState({
-      ...state,
-      showSubNav: false,
-    });
+    setShowSubNav(false);
   }
 
   function handleLinkClick() {
-    setState({
-      ...state,
-      linkClicked: true,
-      showSubNav: false,
-    });
+    setLinkClicked(true);
+    setShowSubNav(false);
   }
 
   function toggleNav() {
-    const { showSubNav } = state;
-    setState({
-      ...state,
-      showSubNav: !showSubNav,
-    });
+    setShowSubNav(!showSubNav);
   }
 
-  const { showSubNav, visible } = state;
-  const icon = showSubNav ? faTimes : faBars;
+  const Icon = showSubNav ? LightXMark : LightBars;
   return (
     <nav
       className={classnames("NavBar", {
         "NavBar--hidden": !visible,
       })}
+      onMouseEnter={() => setVisible(true)}
     >
       <div className="NavBar__container">
         <button className="NavBar--hamburger" onClick={toggleNav}>
-          <FontAwesomeIcon icon={icon} />
+          <Icon height="20px" fill="#fcd734" />
         </button>
-        <Link className="NavBar--marquee" to="/" onClick={handleScrollToTop}>
+        <Link className="NavBar--marquee" to="/home" onClick={handleScrollToTop}>
           Sterling | Dev
         </Link>
-        <Link className="NavBar--large" to={{ pathname: "/", hash: "#about" }} onClick={handleLinkClick}>
+        <Link className="NavBar--large" to={{ pathname: "/home", hash: "#about" }} onClick={handleLinkClick}>
           About
         </Link>
-        <Link className="NavBar--large" to={{ pathname: "/", hash: "#projects" }} onClick={handleLinkClick}>
+        <Link className="NavBar--large" to={{ pathname: "/home", hash: "#projects" }} onClick={handleLinkClick}>
           Projects
         </Link>
-        <Link className="NavBar--large" to={{ pathname: "/", hash: "#connect" }} onClick={handleLinkClick}>
+        <Link className="NavBar--large" to={{ pathname: "/home", hash: "#connect" }} onClick={handleLinkClick}>
           Connect
         </Link>
         <Link to="resume" className="NavBar--large" onClick={handleScrollToTop}>
