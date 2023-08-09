@@ -15,7 +15,7 @@ Coding isn't my only passion. My board game shelf is overflowing with games, my 
 **[Quaff Quizz](https://quaff.now.sh/)** | **[Repo](https://github.com/SterlingDWatts/quaff)** | **[Server Repo](https://github.com/SterlingDWatts/quaff-server)**  
 Learn and Study Wine!
 
-Learn wine through short digestible modules followed by tests. Get a high enough score and unlock the next module! As modules are unlocked the questions are added into the study section filtered by topic to make it easy to cement the
+Learn wine through short digestible modules followed by tests. Get a high enough score and unlock the next module! As modules are unlocked the questions are added into the study section filtered by topic to make it easy to cement the knowledge you have gained.
 
 This site was made with HTML/CSS/JavaScript/React/Node.js/PostgreSQL/Heroku
 ![Quaff Quizz Landing Page](https://quaff.now.sh/QuaffLanding.PNG)
