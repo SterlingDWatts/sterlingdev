@@ -1,6 +1,4 @@
-# Sterling Watts
-
-**Software Developer**
+# Sterling Watts | Software Developer
 
 I am a passionate Software Developer that enjoys making beautiful and intuitive websites as well as analyzing the data that I can get from them!
 
