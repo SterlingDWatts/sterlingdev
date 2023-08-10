@@ -12,7 +12,7 @@ const Resume = () => {
         <section className="Resume--hero">
           <header>
             <h1>Sterling Watts</h1>
-            <span>Software Developer</span>
+            <p>Software Developer</p>
           </header>
         </section>
         <section className="Resume--contact">
@@ -29,6 +29,11 @@ const Resume = () => {
           <p>
             <a href="https://www.linkedin.com/in/sterlingdwatts/" rel="noopener noreferrer" target="_blank">
               in/SterlingDWatts
+            </a>
+          </p>
+          <p>
+            <a href="http://sterlingdev.io" rel="noopener noreferrer" target="_blank">
+              sterlingdev.io
             </a>
           </p>
           <p>

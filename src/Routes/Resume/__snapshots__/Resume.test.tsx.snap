@@ -14,9 +14,9 @@ exports[`<Resume /> renders the UI as expected 1`] = `
         <h1>
           Sterling Watts
         </h1>
-        <span>
+        <p>
           Software Developer
-        </span>
+        </p>
       </header>
     </section>
     <section
@@ -49,6 +49,15 @@ exports[`<Resume /> renders the UI as expected 1`] = `
           target="_blank"
         >
           in/SterlingDWatts
+        </a>
+      </p>
+      <p>
+        <a
+          href="http://sterlingdev.io"
+          rel="noopener noreferrer"
+          target="_blank"
+        >
+          sterlingdev.io
         </a>
       </p>
       <p>

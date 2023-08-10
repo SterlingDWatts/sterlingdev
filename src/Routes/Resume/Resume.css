@@ -5,11 +5,11 @@
 
 .Resume h1 {
   font-size: 40px;
-  line-height: 1;
+  line-height: 2;
 }
 
-.Resume--hero span {
-  font-size: 18px;
+.Resume--hero p {
+  font-size: 25px;
   line-height: 1;
 }
 
@@ -71,10 +71,6 @@
     max-width: 944px;
     margin-left: auto;
     margin-right: auto;
-  }
-
-  .Resume h1 {
-    font-size: 64px;
   }
 
   .Resume--top {
