@@ -32,7 +32,7 @@ const Resume = () => {
             </a>
           </p>
           <p>
-            <a href="http://sterlingdev.io" rel="noopener noreferrer" target="_blank">
+            <a href="https://sterlingdev.io/" rel="noopener noreferrer" target="_blank">
               sterlingdev.io
             </a>
           </p>

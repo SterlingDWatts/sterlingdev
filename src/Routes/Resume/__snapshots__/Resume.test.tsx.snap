@@ -53,7 +53,7 @@ exports[`<Resume /> renders the UI as expected 1`] = `
       </p>
       <p>
         <a
-          href="http://sterlingdev.io"
+          href="https://sterlingdev.io/"
           rel="noopener noreferrer"
           target="_blank"
         >
