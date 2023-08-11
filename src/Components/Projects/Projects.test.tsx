@@ -1,7 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import { shallow } from "enzyme";
-import toJson from "enzyme-to-json";
+import renderer from "react-test-renderer";
 import { BrowserRouter } from "react-router-dom";
 import Projects from "./Projects";
 
@@ -18,11 +17,13 @@ describe("<Projects />", () => {
   });
 
   it("render the UI as expected", () => {
-    const wrapper = shallow(
-      <BrowserRouter>
-        <Projects />
-      </BrowserRouter>
-    );
-    expect(toJson(wrapper)).toMatchSnapshot();
+    const tree = renderer
+      .create(
+        <BrowserRouter>
+          <Projects />
+        </BrowserRouter>
+      )
+      .toJSON();
+    expect(tree).toMatchSnapshot();
   });
 });
